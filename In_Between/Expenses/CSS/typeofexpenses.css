@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-word{
+    height: 10vh;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.payment-types{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    margin-bottom: 20px;
+    width: 90%;
+    height: 170px;
+    background-color: black;
+    background: linear-gradient(190deg, rgba(42,42,42,1) 0%, rgba(0,0,0,1) 100%);
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading{
+    height: 35%;
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.data{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.data-left{
+    flex: 2.5;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-left-heading{
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #bababa;
+}
+
+.necessity-data-left-data{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.wants-data-left-data{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.others-data-left-data{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.data-right{
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.data-right-heading{
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #bababa;
+    
+}
+
+/* for Demo Purpose */
+
+.circle1{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #23fc5d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

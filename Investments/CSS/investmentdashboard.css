@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.upper{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.upper::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.ind-market{
+    min-width: 160px;
+    min-width: 160px;
+    height: 200px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: black;
+    border-radius: 30px;
+    background: linear-gradient(190deg, rgba(42,42,42,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.heading{
+    font-size: 22px;
+    color: white;
+}
+
+/*--------- Indian Market Card ----------- */ 
+.sensex-word{
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.sensex{
+    display: flex;
+}
+
+.sensex-number{
+    color: #bababa;
+}
+
+.sensex-change{
+    color: #2eff54;
+    margin-left: 10px;  
+}
+
+.nifty-word{
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.nifty{
+    display: flex;
+}
+
+.nifty-number{
+    color: #bababa;
+}
+
+.nifty-change{
+    color: #2eff54;
+    margin-left: 10px;
+}
+
+
+.forex-rates{
+    min-width: 160px;
+    min-width: 160px;
+    height: 200px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: black;
+    border-radius: 30px;
+    background: linear-gradient(190deg, rgba(42,42,42,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+/*--------- Forex Market Card ----------- */ 
+
+.USD-word{
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.USD{
+    display: flex;
+}
+
+.USD-number{
+    color: #bababa;
+}
+
+.USD-change{
+    color: #2eff54;
+    margin-left: 10px;  
+}
+
+.nifty-word{
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.nifty{
+    display: flex;
+}
+
+.nifty-number{
+    color: #bababa;
+}
+
+.nifty-change{
+    color: #2eff54;
+    margin-left: 10px;
+}
+
+.crypto-market{
+    min-width: 160px;
+    height: 200px;
+    margin-left: 10px;
+    background-color: black;
+    border-radius: 30px;
+    background: linear-gradient(190deg, rgba(42,42,42,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.usa-market{
+    min-width: 160px;
+    height: 200px;
+    margin-left: 10px;
+    background-color: black;
+    border-radius: 30px;
+    background: linear-gradient(190deg, rgba(42,42,42,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.lower{
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.lower::-webkit-scrollbar {
+    display: none;
+  }
+
+.investmenttypes-word{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0px 5px 15px;
+}
+
+.investmenttypes{
+    position: relative;
+    padding: 5px;
+    width: 93vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ebebeb;
+    border-radius: 30px;
+}
+
+.type-button{
+    width: 100px;
+    padding: 3px 10px 3px 10px;
+    background-color: black;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    height: 40px;
+    font-size: 15px;
+}
+
+.equitieswatchlist-word{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 0px 5px 15px;
+}
+
+.equitieswatchlist{
+    position: relative;
+    width: 93vw;
+    height: 25vh;
+    background-color: #ebebeb;
+    border-radius: 30px;
+    overflow-y: scroll;
+}
+
+.fixedwatchlist-word{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 0px 5px 15px;
+}
+
+.fixedwatchlist{
+    position: relative;
+    width: 93vw;
+    height: 25vh;
+    background-color: #ebebeb;
+    border-radius: 30px;
+    overflow-y: scroll;
+}

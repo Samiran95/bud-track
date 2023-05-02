@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    padding: 10px;
+}
+
+.upper{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.back-button{
+    position: absolute;
+    left: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #242424;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.bottom{
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+.bottom::-webkit-scrollbar{
+    display: none;
+}
+
+.middle{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-upper{
+    width: 90%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trends-word{
+    flex: 1.2;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+form{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.month-option{
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ebebeb;
+    text-align: center;
+}
+
+.filter-button{
+    background-color: #242424;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.middle-middle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.middle-middle::-webkit-scrollbar{
+    display: none;
+}
+
+.graph{
+    min-height: 30vh;
+    min-width: 100%;
+    background-color: black;
+    background: linear-gradient(190deg, rgba(42,42,42,1) 0%, rgba(0,0,0,1) 100%);
+    border-radius: 40px;
+}
+.middle-right{
+    min-height: 30vh;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 90%;
+    border-radius: 40px;
+}
+
+.analytics-container{
+    width: 38vw;
+    padding: 8px;
+    height: 100px;
+    background-color: black;
+    background: linear-gradient(190deg, rgba(42,42,42,1) 0%, rgba(0,0,0,1) 100%);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.analytics-heading{
+    text-align: center;
+    font-size: 13px;
+    color: #ebebeb;
+}
+
+.container-amount{
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+}
+
+.lower{
+    height: 47vh;
+    padding: 15px;
+    background-color:#ebebeb;;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.lower::-webkit-scrollbar{
+    display: none;
+}
+
+.trend-data-container{
+    margin-bottom: 10px;
+    background-color: #242424;
+    padding: 0px 20px 0px 20px;
+    min-width: 100%;
+    min-height: 70px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.month{
+    flex: 2;
+    font-weight: 600;
+    color: white;
+}
+
+.numbers{
+    flex: 1.2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.amount{
+    font-weight: 600;
+    color: white;
+}
+
+.percentage{
+    font-weight: 600;
+    color: greenyellow;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/goalsdashboard.css">
+    <link rel="stylesheet" href="../HTML/goalsexpenseform.html">
+    <title>Goals Dashboard</title>
+</head>
+
+<body>
+    <div class="upper">
+        <p class="heading">Goals</p>
+        <button type="button" class="back-button"><</button>
+    </div>
+    <div class="middle">
+        <div class="goals-card">
+            <div class="goals-balance">
+                <div class="goals-balance-word">A V A I L A B L E</div>
+                <div class="goals-balance-amount">25000</div>
+            </div>
+            <div class="investment-button">
+                <button type="button" class="investment">Want to Invest ?</button>
+            </div>
+        </div>
+    </div>
+    <div class="lower">
+        <div class="lower-button">
+            <button type="button" class="goals-expenses" onclick="location.href = '../HTML/goalsexpenseform.html';">Add Expense</button>
+            <button type="button" class="goals-history" onclick="location.href = '../HTML/goalshistory.html';">History</button>
+
+        </div>
+
+        <div class="lower-goalslist">
+            <div class="goalslist-upper">
+                <p class="goalslist-word">Goals</p>
+                <button type="button" class="goals-add">Add</button>
+            </div>
+            <div class="goalslist"></div>
+        </div>
+
+        <div class="lower-last5">
+            <div class="lower-last5-upper">
+                <p class="lower-last5-word">Last 5 transactions</p>
+                <button type="button" class="last5-add">Check</button>
+            </div>
+            <div class="last5"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

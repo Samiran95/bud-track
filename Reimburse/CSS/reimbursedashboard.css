@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upper{
+    width: 80vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-button{
+    position: absolute;
+    left: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #242424;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.middle {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reimburse-card {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(223deg, #efd5ff 0%, #515ada 100%);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.reimburse-balance {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reimburse-balance-word {
+    font-size: 20px;
+}
+
+.reimburse-balance-amount {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.lower {
+    height: 64vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.lower::-webkit-scrollbar {
+    display: none;
+}
+
+.reimburse-expenses {
+    padding: 0px 20px 0px 20px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #242424;
+    font-weight: 700;
+    border: none;
+    color: red;
+}
+
+.reimburse-history {
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #242424;
+    font-weight: 700;
+    border: none;
+    color: rgb(209,152,255);
+}
+
+.reimburselist-upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7px 0px 7px 0px ;
+}
+
+.reimburselist-word {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0px 5px 15px;
+}
+
+.reimburse-add {
+    background-color: #0f0f0f;
+    margin: 10px 15px 5px 0px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+
+.reimburse-edit {
+    background-color: #0f0f0f;
+    margin: 10px 15px 5px 0px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.reimburselist {
+    width: 93vw;
+    height: 55vh;
+    background-color: #ebebeb;
+    border-radius: 30px;
+    overflow-y: scroll;
+
+}
+
+.reimburselist::-webkit-scrollbar{
+    display: none;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/givedashboard.css">
+    <link rel="stylesheet" href="../HTML/givehistory.html">
+    <title>Give/Gifts Dashboard</title>
+</head>
+
+<body>
+    <div class="upper">
+        <p class="heading">Give / Gifts</p>
+        <button type="button" class="back-button"><</button>
+    </div>
+    <div class="middle">
+        <div class="give-card">
+            <div class="give-balance">
+                <div class="give-balance-word">B A L A N C E</div>
+                <div class="give-balance-amount">25000</div>
+            </div>
+        </div>
+    </div>
+    <div class="lower">
+        <div class="lower-button">
+            <button type="button" class="give-expenses" onclick="location.href = '../HTML/giveexpenseform.html';">Add Expense</button>
+            <button type="button" class="give-history" onclick="location.href = '../HTML/givehistory.html';">History</button>
+
+        </div>
+
+        <div class="lower-last5">
+            <div class="lower-last5-upper">
+                <p class="lower-last5-word">Last 5 transactions</p>
+                <button type="button" class="last5-add">Check</button>
+            </div>
+            <div class="last5"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

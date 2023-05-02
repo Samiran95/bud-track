@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/givesexpenseform.css">
+    <title>Give/Gifts Form</title>
+</head>
+
+<body>
+    <div class="upper">
+        <p class="heading-word">Give/Gifts</p>
+    </div>
+
+    <div class="lower">
+        <form>
+            <input type="date" class="date-input">
+            <input type="text" class="reason-input" placeholder="Reason">
+            <select class="type-of-payment">
+                <option value="">Mode of payment</option>
+                <option value="UPI">UPI</option>
+                <option value="Online">Online</option>
+                <option value="Cash">Cash</option>
+                <option value="Others">Others</option>
+            </select>
+            <input type="text" class="amount-input" placeholder="Amount">
+        </form>
+        <div class="button">
+            <button type="button" class="submit" onclick="">Submit</button>
+            <button type="button" class="income-history" onclick="location.href = '../HTML/givehistory.html';">History</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

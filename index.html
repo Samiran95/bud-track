@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/dashboard.css">
+    <link rel="stylesheet" href="Trends/Investments/investmentstrends.html">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="upper">
+        <div class="upper-left">
+            <p class="hello-word">Hello</p>
+            <p class="name-word">Samiran</p>
+        </div>
+        <div class="upper-right">
+            <div class="alert">
+                <div class="high"></div>
+                <div class="medium"></div>
+                <div class="low"></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="balance-card">
+            <div class="balance-card-left">
+                <div class="balance-card-upper">
+                    <p class="expense-balance-word1">EXPENSE BALANCE</p>
+                    <p class="expense-balance-word2">(THIS MONTH)</p>
+                    <p class="expense-balance-amount">25000</p>
+                </div>
+                <div class="balance-card-lower">
+                    <button type="button" class="balance-button" onclick="location.href='Balances/Balancedashboard/balancedashboard.html';">
+                        <p class="balance-button-word">More Balances</p>
+                        <p class="balance-sign">></p>
+                    </button>
+                </div>
+            </div>
+            <div class="balance-card-right">
+                <p class="analytics-word">A N A L Y T I C S &nbsp></p>
+            </div>
+        </div>
+        <div class="investments-card">
+            <div class="investments-card-left">
+                <div class="investments-heading">INVESTMENTS</div>
+                <div class="investments-card-lower">
+                    <div class="investments-card-lower-left">
+                        <div class="market">
+                            <p class="market-heading">MARKET</p>
+                            <div class="underline1"></div>
+                            <div class="market-names">
+                                <div class="sensex">
+                                    <div class="market-word">SENSEX</div>
+                                    <div class="market-numbers">
+                                        <div class="market-amount">58000</div>
+                                        <div class="market-change">20%</div>
+                                    </div>
+                                </div>
+
+                                <div class="nifty">
+                                    <div class="market-word">NIFTY</div>
+                                    <div class="market-numbers">
+                                        <div class="market-amount">28000</div>
+                                        <div class="market-change">12%</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="seperate"></div>
+
+                    <div class="investments-card-lower-right">
+                        <div class="fixed-returns">
+                            <div class="fixed-return-word">Fixed-Returns<div class="underline2"></div>
+                            </div>
+                            <div class="fixed-returns-lower">
+                                <div class="available-fixed-returns-word">Active funds</div>
+                                <div class="available-fixed-returns-amount">320000000</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="investments-card-right" onclick="location.href = 'Investments/HTML/investmentdashboard.html';">
+                <p class="explore-word">E X P L O R E &nbsp></p>
+            </div>
+        </div>
+        <div class="others-card">
+            <button type="button" class="apps-button" onclick="location.href = 'Apps/apps.html';">More Apps</button>
+            <button type="button" class="saved-card-button" onclick="location.href = 'Saved_Cards/HTML/savedcardsdisplay.html';">Saved Cards</button>
+            <button type="button" class="personal-details-button">Personal Details</button>
+        </div>
+    </div>
+    <div class="lower">
+        <div class="lower-upper">
+            <div class="transaction-container">
+                <button type="button" class="income-button"  onclick="location.href = 'Income/HTML/incomeform.html';">Income</button>
+                <button type="button" class="payment-button" onclick="location.href = 'In_Between/Expenses/HTML/typeofexpenses.html';">Payment</button>
+            </div>
+        </div>
+        <div class="lower-lower">
+            <div class="watchlist">
+                <p class="watchlist-word">Watchlist</p>
+                <div class="watchlist-container">
+                    <div class="expense-balance">
+                        <div class="expense-balance-upper">
+                            <div class="watchlist-heading-word">Balance Available</div>
+                            <button type="button" class="setting-button">Settings</button>
+                        </div>
+                        <div class="data-containers">
+
+                            <div class="expense-data-container" onclick="location.href = 'Trends/Necessity/necessitytrends.html';">
+                                <div class="expense-data-heading">Necessity</div>
+                                <div class="expense-data-amount">4500</div>
+                            </div>
+
+                            <div class="expense-data-container" onclick="location.href = 'Trends/Wants/wantstrends.html';">
+                                <div class="expense-data-heading">Wants</div>
+                                <div class="expense-data-amount">1342</div>
+                            </div>
+
+                            <div class="expense-data-container" onclick="location.href = 'Trends/Investments/investmentstrends.html';">
+                                <div class="expense-data-heading">Investments</div>
+                                <div class="expense-data-amount">1000000</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="expense-balance">
+                        <div class="expense-balance-upper">
+                            <div class="watchlist-heading-word">Balance Available</div>
+                            <button type="button" class="setting-button">Settings</button>
+                        </div>
+                        <div class="data-containers">
+
+                            <div class="expense-data-container">
+                                <div class="expense-data-heading">Necessity</div>
+                                <div class="expense-data-amount">4500</div>
+                            </div>
+
+                            <div class="expense-data-container">
+                                <div class="expense-data-heading">Wants</div>
+                                <div class="expense-data-amount">1342</div>
+                            </div>
+
+                            <div class="expense-data-container">
+                                <div class="expense-data-heading">Investments</div>
+                                <div class="expense-data-amount">10000003</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="expense-balance">
+                        <div class="expense-balance-upper">
+                            <div class="watchlist-heading-word">Balance Available</div>
+                            <button type="button"  class="setting-button">Settings</button>
+                        </div>
+                        <div class="data-containers">
+
+                            <div class="expense-data-container">
+                                <div class="expense-data-heading">Necessity</div>
+                                <div class="expense-data-amount">4500</div>
+                            </div>
+
+                            <div class="expense-data-container">
+                                <div class="expense-data-heading">Wants</div>
+                                <div class="expense-data-amount">1342</div>
+                            </div>
+
+                            <div class="expense-data-container">
+                                <div class="expense-data-heading">Investments</div>
+                                <div class="expense-data-amount">10000003</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="expense-balance">
+                        <div class="expense-balance-upper">
+                            <div class="watchlist-heading-word">Balance Available</div>
+                            <button type="button"  class="setting-button">Settings</button>
+                        </div>
+                        <div class="data-containers">
+
+                            <div class="expense-data-container">
+                                <div class="expense-data-heading">Necessity</div>
+                                <div class="expense-data-amount">4500</div>
+                            </div>
+
+                            <div class="expense-data-container">
+                                <div class="expense-data-heading">Wants</div>
+                                <div class="expense-data-amount">1342</div>
+                            </div>
+
+                            <div class="expense-data-container">
+                                <div class="expense-data-heading">Investments</div>
+                                <div class="expense-data-amount">10000003</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
