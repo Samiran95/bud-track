@@ -126,36 +126,27 @@ body {
 }
 
 
-.lower-last5{
+.lower-monthly{
     margin-top: 10px;
 }
 
-.lower-last5-upper {
+.lower-monthly-upper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 7px 0px 7px 0px ;
 }
 
-.lower-last5-word {
+.lower-monthly-word {
     font-size: 18px;
     font-weight: 700;
     margin: 10px 0px 5px 15px;
 }
 
-.last5-add   {
-    background-color: #0f0f0f;
-    margin: 10px 15px 5px 0px;
-    padding: 5px 10px 5px 10px;
-    border-radius: 20px;
-    border: none;
-    color: white;
-}
-
-.last5 {
+.monthly {
     width: 93vw;
     height: 40vh;
     background-color: #ebebeb;
-    border-radius: 30px;
+    border-radius: 40px;
 
 }

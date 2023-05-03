@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/tripsdashboard.css">
+    <link rel="stylesheet" href="../../In_Between/Investments/HTML/tripinvestments.html">
     <title>Trips Dashboard</title>
 </head>
 
@@ -21,7 +22,7 @@
                 <div class="trip-balance-amount">25000</div>
             </div>
             <div class="investment-button">
-                <button type="button" class="investment">Want to Invest ?</button>
+                <button type="button" class="investment" onclick="location.href = '../../In_Between/Investments/HTML/tripinvestments.html';">Want to Invest ?</button>
             </div>
         </div>
     </div>
@@ -35,17 +36,9 @@
         <div class="lower-triplist">
             <div class="triplist-upper">
                 <p class="triplist-word">Upcoming Trips</p>
-                <button type="button" class="trips-add">Add</button>
+                <button type="button" class="trips-add" onclick="location.href = '../HTML/upcomingtripform.html';">Add</button>
             </div>
             <div class="triplist"></div>
-        </div>
-
-        <div class="lower-last5">
-            <div class="lower-last5-upper">
-                <p class="lower-last5-word">Last 5 transactions</p>
-                <button type="button" class="last5-add">Check</button>
-            </div>
-            <div class="last5"></div>
         </div>
     </div>
 

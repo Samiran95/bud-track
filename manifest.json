@@ -1,0 +1,17 @@
+{
+    "lang": "en-us",
+    "name": "budget app",
+    "short_name": "Budget",
+    "description": "Keeping all the track of the expenses",
+    "start_url": "/",
+    "background_color": "#FFFFF",
+    "theme_color": "#2f3d58",
+    "orientation": "potrait",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/budget.png",
+            "sizes": "512x512"
+        }
+    ]
+}

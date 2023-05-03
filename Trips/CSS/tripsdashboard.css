@@ -133,7 +133,7 @@ body {
     background-color: #242424;
     font-weight: 700;
     border: none;
-    color: red;
+    color: #ff2424;
 }
 
 .trip-history {
@@ -143,7 +143,7 @@ body {
     background-color: #242424;
     font-weight: 700;
     border: none;
-    color: white;
+    color: rgb(46, 255, 238);
 }
 
 .triplist-upper {
@@ -171,41 +171,7 @@ body {
 
 .triplist {
     width: 93vw;
-    height: 25vh;
-    background-color: #ebebeb;
-    border-radius: 30px;
-
-}
-
-.lower-last5{
-    margin-top: 10px;
-}
-
-.lower-last5-upper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 7px 0px 7px 0px ;
-}
-
-.lower-last5-word {
-    font-size: 18px;
-    font-weight: 700;
-    margin: 10px 0px 5px 15px;
-}
-
-.last5-add   {
-    background-color: #0f0f0f;
-    margin: 10px 15px 5px 0px;
-    padding: 5px 10px 5px 10px;
-    border-radius: 20px;
-    border: none;
-    color: white;
-}
-
-.last5 {
-    width: 93vw;
-    height: 25vh;
+    height: 37vh;
     background-color: #ebebeb;
     border-radius: 30px;
 
