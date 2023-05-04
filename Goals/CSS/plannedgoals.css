@@ -17,23 +17,9 @@ body{
     justify-content: center;
     align-items: center;
     height: 30vh;
-    background: rgb(99, 66, 232);
-    background: linear-gradient(108deg, rgba(99, 66, 232, 1) 0%, rgba(137, 249, 240, 1) 100%);
+    background: rgb(67,255,234);
+    background: linear-gradient(243deg, rgba(67,255,234,1) 0%, rgba(92,208,136,1) 100%);
     border-radius: 40px;
-}
-
-.back-button{
-    position: absolute;
-    left: 25px;
-    top: 2.8vh;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: none;
-    background-color: #242424;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
 }
 
 .heading-word1{
@@ -85,7 +71,7 @@ form{
     text-align: center;
 }
 
-.tripname-input{
+.hhname-input{
     width: 70vw;
     height: 50px;
     margin: 10px;
@@ -98,7 +84,7 @@ form{
     text-align: center;
 }
 
-.reason-input{
+.hhreason-input{
     width: 70vw;
     height: 50px;
     margin: 10px;
@@ -110,18 +96,7 @@ form{
     border: none;
     text-align: center;
 }
-.type-of-payment{
-    width: 70vw;
-    height: 50px;
-    margin: 10px;
-    padding: 5px 20px 5px 20px;
-    border-radius: 50px;
-    background-color: #0f0f0f;
-    font-size: 16px;
-    color: white;
-    border: none;
-    text-align: center;
-}
+
 .amount-input{
     width: 70vw;
     height: 50px;
@@ -157,8 +132,9 @@ form{
     margin-left: 20px;
     border: none;
     border-radius: 30px;
-    background: rgb(99, 66, 232);
-    box-shadow: 0px 0px 20px 0px  rgb(99, 66, 232);
-    color: white;
+    background: rgb(67,255,234);
+    box-shadow: 0px 0px 20px 0px  rgb(67,255,234);
+    color: black;
     font-size: 16px;
+    font-weight: 600;
 }

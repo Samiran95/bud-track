@@ -19,23 +19,29 @@
 }
 
 .upper-left {
+    margin-top: 25px;
+    margin-left: 10px;
     display: flex;
-    font-size: 23px;
+    flex-direction: column;
     font-weight: 600;
+}
+
+.hello-word{
+    font-size: 33px;
 }
 
 
 .name-word {
-    margin-left: 5px;
+    position: relative;
+    bottom: 8px;
     color: #cb5cfa;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 .alert {
     width: 35vw;
     height: 30px;
-    border-radius: 20px;
-    border-style: solid;
-    border-width: 2px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -57,13 +63,6 @@
     background-color: yellow;
 }
 
-.low {
-    position: relative;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: green;
-}
 
 .middle {
     width: 100%;
@@ -78,9 +77,9 @@
 }
 
 .balance-card {
-    max-width: 85%;
-    min-width: 85%;
-    height: 23vh;
+    max-width: 300px;
+    min-width: 300px;
+    height: 178px;
     margin: 0px 10px 0px 15px;
     display: flex;
     border-radius: 40px;
@@ -173,9 +172,9 @@
 }
 
 .investments-card {
-    max-width: 85%;
-    min-width: 85%;
-    height: 23vh;
+    max-width: 300px;
+    min-width: 300px;
+    height: 178px;
     display: flex;
     margin: 0px 10px 0px 15px;
     border-radius: 35px;
@@ -333,8 +332,8 @@
     border: none;
     font-weight: 600;
     color: #cb5cfa;
-    padding: 10px 15px 10px 15px;
-    border-radius: 20px;
+    padding: 12px 20px 12px 20px;
+    border-radius: 30px;
 }
 
 .saved-card-button {
@@ -343,8 +342,8 @@
     border: none;
     font-weight: 600;
     color: #5cfa79;
-    padding: 10px 15px 10px 15px;
-    border-radius: 20px;
+    padding: 12px 20px 12px 20px;
+    border-radius: 30px;
 
 }
 
@@ -354,8 +353,8 @@
     border: none;
     font-weight: 600;
     color: #faa35c;
-    padding: 10px 15px 10px 15px;
-    border-radius: 20px;
+    padding: 12px 20px 12px 20px;
+    border-radius: 30px;
 
 }
 
@@ -373,7 +372,7 @@
 }
 
 .transaction-container {
-    width: 80vw;
+    width: 75vw;
     margin-top: 15px;
     padding: 10px;
     background-color: #ebebeb;

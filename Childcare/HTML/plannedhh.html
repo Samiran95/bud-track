@@ -5,28 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/upcomingtripform.css">
-    <link rel="stylesheet" href="tripshistory.html">
-    <title>Upcoming Trip</title>
+    <link rel="stylesheet" href="../CSS/plannedhh.css">
+    <link rel="stylesheet" href="hhhistory.html">
+    <title>Planned Household Purchases</title>
 </head>
 
 <body>
-    <button type="button" class="back-button"><</button>
     <div class="upper">
-        <p class="heading-word1">U P C O M I N G</p>
-        <p class="heading-word2">T R I P S</p>
+        <p class="heading-word1">P L A N N E D</p>
+        <p class="heading-word2">P U R C H A S E S</p>
     </div>
 
     <div class="lower">
         <form>
             <input type="text" class="date-input" placeholder="Todays Date" onfocus="(this.type = 'date')" onblur="(this.type = 'text')">
-            <input type="text" class="tripname-input" placeholder="Trip Name">
+            <input type="text" class="hhname-input" placeholder="Purchase Name">
+            <input type="text" class="hhreason-input" placeholder="Reason">
             <input type="text" class="date-input" placeholder="Planned Date" onfocus="(this.type = 'date')" onblur="(this.type = 'text')">
             <input type="text" class="amount-input" placeholder="Expected Amount">
         </form>
         <div class="button">
             <button type="button" class="submit" onclick="">Submit</button>
-            <button type="button" class="history" onclick="location.href = 'tripshistory.html';">History</button>
+            <button type="button" class="history" onclick="location.href = 'hhhistory.html';">History</button>
         </div>
     </div>
 
