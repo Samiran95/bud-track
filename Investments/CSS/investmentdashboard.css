@@ -16,13 +16,22 @@ body{
 }
 
 .upper{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.middle{
     height: 30vh;
     display: flex;
     align-items: center;
     overflow-x: scroll;
 }
 
-.upper::-webkit-scrollbar {
+.middle::-webkit-scrollbar {
     display: none;
   }
 
@@ -159,7 +168,7 @@ body{
 }
 
 .lower{
-    height: 65vh;
+    height: 57vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,27 +186,23 @@ body{
 }
 
 .investmenttypes{
-    position: relative;
-    padding: 5px;
-    width: 93vw;
-    height: 50px;
+    padding: 10px;
+    width: 85vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #ebebeb;
-    border-radius: 30px;
+    border-radius: 40px;
 }
 
 .type-button{
     width: 100px;
-    padding: 3px 10px 3px 10px;
-    background-color: black;
-    color: black;
+    height: 50px;
+    border-radius: 40px;
+    background-color: #242424;
+    font-weight: 700;
     border: none;
-    border-radius: 30px;
     color: white;
-    height: 40px;
-    font-size: 15px;
 }
 
 .equitieswatchlist-word{
