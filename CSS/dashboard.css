@@ -12,31 +12,28 @@ body{
     padding: 10px;
 }
 
-
 .upper {
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px 0px 20px;
 }
 
-.upper-left {
-    margin-top: 25px;
-    margin-left: 10px;
+.upper-left{
+    margin-left: 20px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-weight: 600;
 }
 
 .hello-word{
-    font-size: 30px;
+    font-size: 27px;
 }
 
 .name-word {
-    position: relative;
-    bottom: 8px;
+    margin-left: 7px;
     color: #ffcb2e;
     font-size: 27px;
     font-weight: 400;
@@ -319,7 +316,7 @@ body{
 
 .lower {
     width: 100%;
-    height: 53vh;
+    height: 57vh;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
