@@ -8,10 +8,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    padding: 10px;
+}
+
 
 .upper {
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -315,7 +319,7 @@
 
 .lower {
     width: 100%;
-    height: 60vh;
+    height: 53vh;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
@@ -359,6 +363,7 @@
 
 .lower-lower {
     margin-top: 15px;
+    width: 100%;
 }
 
 .watchlist-word {
@@ -372,8 +377,9 @@
 }
 
 .watchlist-container {
-    width: 90vw;
-    padding: 15px 5px 15px 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
     background-color: #ebebeb;
     border-radius: 50px;
     display: flex;
@@ -384,6 +390,7 @@
 
 .balance-upper {
     width: 85vw;
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -392,6 +399,7 @@
 .watchlist-heading-word {
     width: 50%;
     margin-top: 5px;
+    font-size: 14px;
     font-weight: 700;
     display: flex;
     justify-content: flex-start;
@@ -413,8 +421,8 @@
 }
 
 .data-containers {
+    width: 100%;
     height: 100px;
-    margin-bottom: 20px;
     background-color: black;
     background: linear-gradient(190deg, rgba(42, 42, 42, 1) 0%, rgba(0, 0, 0, 1) 100%);
     border-radius: 40px;
@@ -446,13 +454,13 @@
 }
 
 .data-container-main{
-    margin-bottom: 20px;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .data-containers1 {
-    width: 140px;
+    width: 170px;
     height: 100px;
     background-color: black;
     background: linear-gradient(190deg, rgba(42, 42, 42, 1) 0%, rgba(0, 0, 0, 1) 100%);
@@ -485,8 +493,8 @@
 }
 
 .data-containers2 {
+    width: 100%;
     height: 250px;
-    margin-bottom: 20px;
     background-color: black;
     background: linear-gradient(190deg, rgba(42, 42, 42, 1) 0%, rgba(0, 0, 0, 1) 100%);
     border-radius: 40px;
