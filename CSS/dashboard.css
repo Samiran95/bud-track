@@ -193,106 +193,62 @@
 .investments-heading {
     font-size: 23px;
     font-weight: 600;
+    height: 30%;
 }
 
-.investments-card-lower {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+/*------------------ Investment Right ------------*/
 
-.investments-card-lower-left {
+.market-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.market-heading {
-    font-size: 14px;
-}
-
-.underline1 {
-    width: 40px;
-    height: 1px;
-    margin: -3px 0px 3px 0px;
-    background-color: #242424;
-}
-
-.underline2 {
-    width: 80px;
-    height: 1px;
-    margin: -3px 0px 3px 0px;
-    background-color: #242424;
-}
-
-.underline3 {
-    width: 35px;
-    height: 1px;
-    margin: -3px 0px 3px 0px;
-    background-color: #242424;
-}
-
-.market-word {
-    font-size: 12px;
+.market-heading{
+    font-size: 15px;
     font-weight: 700;
+    margin-bottom: 5px;
 }
 
-.market-numbers {
+.sub-market{
+    width: 230px;
     display: flex;
-    font-size: 11px;
-    font-weight: 600;
+    align-items: center;
+    overflow-x: scroll;
 }
 
-.market-change {
-    margin-left: 10px;
+.sub-market::-webkit-scrollbar{
+    display: none;
 }
 
-.nifty {
-    margin-top: 10px;
-}
-
-.seperate {
-    width: 1.5px;
-    height: 15vh;
+.sub-market-container{
+    min-width: 100px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
     background-color: #242424;
-    border-radius: 10px;
+    margin-right: 10px;
 }
 
-.fixed-return-word {
-    font-size: 14px;
-}
-
-.available-fixed-returns-word {
-    font-size: 12px;
-    font-weight: 700;
-}
-
-.available-fixed-returns-amount {
-    font-size: 11px;
+.sub-market-heading{
+    font-size: 13px;
     font-weight: 600;
+    color: white;
 }
 
-.others-returns {
-    margin-top: 5px;
-}
-
-.others-return-word {
-    font-size: 14px;
-}
-
-.available-others-returns-word {
-    font-size: 12px;
-    font-weight: 700;
-}
-
-.available-others-returns-amount {
-    font-size: 11px;
+.sub-market-number{
+    font-size: 16px;
     font-weight: 600;
+    color: #5cfa79;
 }
 
 .investments-card-right {
     flex: 1;
+    width: 100%;
     background-color: #242424;
 }
 
@@ -411,19 +367,22 @@
     font-size: 20px;
 }
 
+.expense-balance{
+    margin-bottom: 10px;
+}
+
 .watchlist-container {
     width: 90vw;
     padding: 15px 5px 15px 5px;
     background-color: #ebebeb;
-    border-radius: 40px;
+    border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.expense-balance-upper {
-    margin: 10px 0px 10px 0px;
+.balance-upper {
     width: 85vw;
     display: flex;
     align-items: center;
@@ -431,8 +390,17 @@
 }
 
 .watchlist-heading-word {
+    width: 50%;
     margin-top: 5px;
     font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.watchlist-butt{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .setting-button {
@@ -445,18 +413,22 @@
 }
 
 .data-containers {
-    width: 85vw;
     height: 100px;
+    margin-bottom: 20px;
     background-color: black;
     background: linear-gradient(190deg, rgba(42, 42, 42, 1) 0%, rgba(0, 0, 0, 1) 100%);
-    border-radius: 50px;
+    border-radius: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 5px;
 }
 
 .expense-data-container {
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+    justify-content: space-between;
     text-align: center;
     width: 33.33%;
 }
@@ -470,4 +442,56 @@
     color: #5cfa79;
     font-size: 18px;
     font-weight: 700;
+    word-wrap: break-word;
+}
+
+.data-container-main{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.data-containers1 {
+    width: 140px;
+    height: 100px;
+    background-color: black;
+    background: linear-gradient(190deg, rgba(42, 42, 42, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.month-data-container{
+    display: flex;
+    height: 55%;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+}
+
+.month-data-heading {
+    font-size: 13px;
+    color: #bababa;
+}
+
+.month-data-amount {
+    color: #5cfa79;
+    font-size: 18px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.data-containers2 {
+    height: 250px;
+    margin-bottom: 20px;
+    background-color: black;
+    background: linear-gradient(190deg, rgba(42, 42, 42, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
 }
