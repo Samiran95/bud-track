@@ -205,25 +205,69 @@ body{
     color: white;
 }
 
+.lower-equitieswatchlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.lower-equitieswatchlist-upper{
+    margin-top: 30px;
+    margin-bottom: 8px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .equitieswatchlist-word{
     font-size: 18px;
     font-weight: 700;
-    margin: 20px 0px 5px 15px;
 }
+
+.add{
+    background-color: #0f0f0f;
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .equitieswatchlist{
     position: relative;
     width: 93vw;
     height: 25vh;
     background-color: #ebebeb;
-    border-radius: 30px;
+    border-radius: 40px;
     overflow-y: scroll;
+}
+
+.lower-fixedwatchlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.lower-fixedwatchlist-upper{
+    margin-top: 30px;
+    margin-bottom: 8px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .fixedwatchlist-word{
     font-size: 18px;
     font-weight: 700;
-    margin: 20px 0px 5px 15px;
 }
 
 .fixedwatchlist{
@@ -231,6 +275,6 @@ body{
     width: 93vw;
     height: 25vh;
     background-color: #ebebeb;
-    border-radius: 30px;
+    border-radius: 40px;
     overflow-y: scroll;
 }

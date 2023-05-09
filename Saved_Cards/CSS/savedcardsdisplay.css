@@ -77,6 +77,18 @@ form{
     font-weight: 700;
 }
 
+.add{
+    background-color: #0f0f0f;
+    margin: 10px 15px 5px 0px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .lower{
     height: 79vh;
     width: 100%;
@@ -85,7 +97,7 @@ form{
     align-items: center;
     background-color: #ebebeb;
     padding: 17px;
-    border-radius: 40px;
+    border-radius: 50px;
     overflow-y: scroll;
 }
 
@@ -97,7 +109,7 @@ form{
     margin: 10px 0px 20px 0px;
     width: 80vw;
     min-height: 180px;
-    border-radius: 30px;
+    border-radius: 40px;
     display: flex;
     overflow: hidden;
 }
@@ -118,8 +130,12 @@ form{
     flex: 2;
     width: 90%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     font-weight: 700;
+}
+
+.bank-name{
+    margin-left: 10px;
 }
 
 .card-middle{
