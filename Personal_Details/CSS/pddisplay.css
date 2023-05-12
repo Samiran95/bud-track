@@ -11,8 +11,6 @@ body{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .upper{
@@ -65,16 +63,16 @@ form{
 
 .middle{
     display: flex;
-    width: 80vw;
-    margin: 20px 0px 10px 0px;
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    height: 8vh;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .saved-cards-word{
     font-size: 18px;
     font-weight: 700;
+    margin-left: 30px;
 }
 
 .add{
@@ -90,16 +88,27 @@ form{
 }
 
 .lower{
+    height: 79vh;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.lower::-webkit-scrollbar{
+    display: none;
+}
+
+.lower-section{
     width: 100%;
     padding: 25px ;
     display: flex;
-    align-items: center;
     background-color: #ebebeb;
     border-radius: 50px;
     overflow-x: scroll;
 }
 
-.lower::-webkit-scrollbar{
+.lower-section::-webkit-scrollbar{
     display: none;
 }
 
