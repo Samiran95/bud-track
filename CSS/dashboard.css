@@ -394,6 +394,7 @@ body{
     align-items: center;
 }
 
+
 .heading-upper {
     width: 85vw;
     margin-bottom: 10px;
@@ -463,11 +464,17 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    overflow-x: scroll;
+}
+
+.data-container-main::-webkit-scrollbar{
+    display: none;
 }
 
 .data-containers1 {
-    width: 170px;
+    min-width: 140px;
     height: 100px;
+    margin-right: 10px;
     background-color: black;
     background: linear-gradient(190deg, rgba(42, 42, 42, 1) 0%, rgba(0, 0, 0, 1) 100%);
     border-radius: 40px;
