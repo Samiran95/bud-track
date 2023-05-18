@@ -7,16 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="apps.css">
     <link rel="stylesheet" href="../Household/HTML/hhdashboard.html">
-    <link rel="stylesheet" href="../Childcare/HTML/ccdashboard.html">
+    <link rel="stylesheet" href="../Trips/HTML/tripsdashboard.html">
+    <script src="../Common/JS/gsap.min.js" defer></script>
+    <script src="animate.js" defer></script>
     <title>Apps</title>
 </head>
 
 <body>
+    <!---Loader-->
+    <div class="loaderenter"></div>
+    <div class="loaderleave"></div>
+    <p class="screen-name">Apps</p>
+    <!---Loader-->
     <p class="apps-heading">A P P S</p>
     <div class="lower">
         <div class="lower-container">
             <div class="lower-left">
-                <div class="apps-container" onclick="location.href = '../Trips/HTML/tripsdashboard.html';">
+                <div id="container" class="apps-container" onclick="leavingPage() ; setTimeout('location.href = `../Trips/HTML/tripsdashboard.html`;',1000)">
                     <div class="apps-container-heading">Trips</div>
                     <div class="apps-lower">
                         <div class="apps-lower-heading">Balance Available</div>
@@ -24,7 +31,7 @@
                     </div>
                 </div>
 
-                <div class="apps-container" onclick="location.href = '../Reimburse/HTML/reimbursedashboard.html';">
+                <div id="container" class="apps-container" onclick="location.href = '../Reimburse/HTML/reimbursedashboard.html';">
                     <div class="apps-container-heading">Reimburse</div>
                     <div class="apps-lower">
                         <div class="apps-lower-heading">Balance Available</div>
@@ -32,7 +39,7 @@
                     </div>
                 </div>
 
-                <div class="apps-container" onclick="location.href = '../Goals/HTML/goalsdashboard.html';">
+                <div id="container" class="apps-container" onclick="location.href = '../Goals/HTML/goalsdashboard.html';">
                     <div class="apps-container-heading">Goals</div>
                     <div class="apps-lower">
                         <div class="apps-lower-heading">Balance Available</div>
@@ -40,7 +47,7 @@
                     </div>
                 </div>
 
-                <div class="apps-container" onclick="location.href = '../Giving_Gifts/HTML/givedashboard.html  ';">
+                <div id="container" class="apps-container" onclick="location.href = '../Giving_Gifts/HTML/givedashboard.html  ';">
                     <div class="apps-container-heading">Give / Gifts</div>
                     <div class="apps-lower">
                         <div class="apps-lower-heading">Balance Available</div>
@@ -48,7 +55,7 @@
                     </div>
                 </div>
 
-                <div class="apps-container" onclick="location.href = '../Childcare/HTML/ccdashboard.html';">
+                <div id="container" class="apps-container" onclick="location.href = '../Childcare/HTML/ccdashboard.html';">
                     <div class="apps-container-heading">Childcare</div>
                     <div class="apps-lower">
                         <div class="apps-lower-heading">Balance Available</div>
@@ -56,14 +63,14 @@
                     </div>
                 </div>
 
-                <div class="suggestions" onclick="location.href = '';">Suggestions</div>
+                <div id="container" class="suggestions" onclick="location.href = '';">Suggestions</div>
 
             </div>
             <div class="lower-right">
 
-                <div class="other-funds" onclick="location.href = '';">Other Funds</div>
+                <div id="container" class="other-funds" onclick="location.href = '../Other_Funds/HTML/ofdashboard.html';">Other Funds</div>
 
-                <div class="apps-container" onclick="location.href = '../Household/HTML/hhdashboard.html';">
+                <div id="container" class="apps-container" onclick="location.href = '../Household/HTML/hhdashboard.html';">
                     <div class="apps-container-heading">Household</div>
                     <div class="apps-lower">
                         <div class="apps-lower-heading">Balance Available</div>
@@ -71,7 +78,7 @@
                     </div>
                 </div>
 
-                <div class="apps-container" onclick="location.href = '';">
+                <div id="container" class="apps-container" onclick="location.href = '';">
                     <div class="apps-container-heading">Credit-Card</div>
                     <div class="apps-lower">
                         <div class="apps-lower-heading">Balance Available</div>
@@ -79,7 +86,7 @@
                     </div>
                 </div>
 
-                <div class="apps-container" onclick="location.href = '';">
+                <div id="container" class="apps-container" onclick="location.href = '';">
                     <div class="apps-container-heading">Loans</div>
                     <div class="apps-lower">
                         <div class="apps-lower-heading">Balance Available</div>
@@ -87,11 +94,11 @@
                     </div>
                 </div>
 
-                <div class="apps-container" onclick="location.href = '';">
+                <div id="container" class="apps-container" onclick="location.href = '';">
                     <div class="apps-container-heading">Settings</div>
                 </div>
 
-                <div class="apps-container" onclick="location.href = '';">
+                <div id="container" class="apps-container" onclick="location.href = '';">
                     <div class="apps-container-heading">Reminders</div>
                 </div>
 

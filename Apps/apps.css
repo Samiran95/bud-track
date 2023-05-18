@@ -14,7 +14,48 @@ body{
     justify-content: center;
     padding: 10px;
     width: 100%;
+    overflow: hidden;
 }
+
+
+
+/* Loader*/
+.screen-name{
+    position: absolute;
+    top: 100px;
+    width : 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 200;
+    color: white;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 2;
+}
+
+.loaderenter{
+    position: absolute;
+    width: 100%;
+    height: 101vh;
+    background-color: black;
+    z-index: 1;
+}
+
+.loaderleave{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 101vh;
+    background-color: black;
+    z-index: 1;
+}
+
+
+/* Loader*/
+
 .apps-heading{
     height: 19vh;
     display: flex;
