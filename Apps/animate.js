@@ -68,10 +68,12 @@ function leavingPage() {
         delay: 2
     }),
     
-    gsap.to(".apps-heading" ,{
-        y : -50,
-        duration : 1,
-    }) ,
+    gsap.to(".loaderenter" , {
+        duration: 1,
+        y: "-102vh",
+        ease: Power4.easeOut,
+        delay : 1.3
+    })
     
     gsap.to(".lower-container" ,{
         y : -50,
