@@ -13,7 +13,7 @@
     <title>Apps</title>
 </head>
 
-<body>
+<body onunload="window.location.reload()">
     <div class="visible">
         <!---Loader-->
         <div class="loaderenter"></div>
@@ -26,7 +26,7 @@
             <div class="lower-container">
                 <div class="lower-left">
                     <div id="container" class="apps-container"
-                        onclick="leavingPage() ; setTimeout('location.href = `../Trips/HTML/tripsdashboard.html`;',1000)" onunload="location.reload()">
+                        onclick="leavingPage() ; setTimeout('location.href = `../Trips/HTML/tripsdashboard.html`;',1000)">
                         <div class="apps-container-heading">Trips</div>
                         <div class="apps-lower">
                             <div class="apps-lower-heading">Balance Available</div>
