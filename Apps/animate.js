@@ -80,7 +80,8 @@ function leavingPage() {
         y: -100,
         opacity: 1,
         duration : 0.5,
-        ease: Power2.easeOut
+        ease: Power2.easeOut,
+        delay: 1.2
     })
     
     gsap.to(".screen-name" ,{
@@ -88,7 +89,8 @@ function leavingPage() {
         opacity: 0,
         duration : 0.5,
         delay: 0.8,
-        ease: Power2.easeOut
+        ease: Power2.easeOut,
+        delay: 1.2
     
     })
     
@@ -96,7 +98,7 @@ function leavingPage() {
         duration: 1,
         y: "-102vh",
         ease: Power4.easeOut,
-        delay : 1.3
+        delay : 2.5
     })
     
     //common Entry Animation
@@ -106,13 +108,13 @@ function leavingPage() {
         opacity: 0,
         y : 100,
         duration : 0.5,
-        delay : 1.7
+        delay : 2.9
     })
     
     gsap.from(".lower-container" ,{
         y : "101vh",
         duration : 1,
-        delay : 1.9
+        delay : 3.1
     })
     
     gsap.from (".lower-left>#container",{
@@ -120,7 +122,7 @@ function leavingPage() {
         duration : 1,
         delay: 2.2,
         stagger : 0.1,
-        duration: 0.9
+        duration: 3.1
     })
     
     gsap.from (".lower-right>#container",{
@@ -128,7 +130,7 @@ function leavingPage() {
         duration : 1,
         delay: 2.2,
         stagger : 0.1,
-        duration: 0.9
+        duration: 3.1
     })
     
 
