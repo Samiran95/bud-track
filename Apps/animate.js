@@ -62,6 +62,11 @@ function leavingPage() {
         y: "-101vh",
         ease: Power4.easeOut,
     }),
+
+    gsap.to(".loaderleave" , {
+        opacity: 0,
+        delay: 2
+    }),
     
     gsap.to(".apps-heading" ,{
         y : -50,
