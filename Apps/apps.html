@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--No Chache-->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <!--No Chache-->
     <link rel="stylesheet" href="apps.css">
     <link rel="stylesheet" href="../Household/HTML/hhdashboard.html">
     <link rel="stylesheet" href="../Trips/HTML/tripsdashboard.html">
@@ -16,108 +13,108 @@
     <title>Apps</title>
 </head>
 
-<body onbeforeunload = pageExit()>
-    <div class="visible">
-        <!---Loader-->
-        <div class="loaderenter"></div>
-        <div class="loaderleave"></div>
-        <p class="screen-name">Apps</p>
-        <!---Loader-->
+<body>
 
-        <p class="apps-heading">A P P S</p>
-        <div class="lower">
-            <div class="lower-container">
-                <div class="lower-left">
-                    <div id="container" class="apps-container"
-                        onclick="leavingPage() ; setTimeout('location.href = `../Trips/HTML/tripsdashboard.html`;',1000)">
-                        <div class="apps-container-heading">Trips</div>
-                        <div class="apps-lower">
-                            <div class="apps-lower-heading">Balance Available</div>
-                            <div class="apps-lower-amount">34000</div>
-                        </div>
+    <!---Loader-->
+    <div class="loaderenter"></div>
+    <div class="loaderleave"></div>
+    <p class="screen-name">Apps</p>
+    <!---Loader-->
+
+    <p class="apps-heading">A P P S</p>
+    <div class="lower">
+        <div class="lower-container">
+            <div class="lower-left">
+                <div id="container" class="apps-container"
+                    onclick="leavingPage() ; setTimeout('location.href = `../Trips/HTML/tripsdashboard.html`;',1000)">
+                    <div class="apps-container-heading">Trips</div>
+                    <div class="apps-lower">
+                        <div class="apps-lower-heading">Balance Available</div>
+                        <div class="apps-lower-amount">34000</div>
                     </div>
-
-                    <div id="container" class="apps-container"
-                        onclick="location.href = '../Reimburse/HTML/reimbursedashboard.html';">
-                        <div class="apps-container-heading">Reimburse</div>
-                        <div class="apps-lower">
-                            <div class="apps-lower-heading">Balance Available</div>
-                            <div class="apps-lower-amount">34000</div>
-                        </div>
-                    </div>
-
-                    <div id="container" class="apps-container"
-                        onclick="location.href = '../Goals/HTML/goalsdashboard.html';">
-                        <div class="apps-container-heading">Goals</div>
-                        <div class="apps-lower">
-                            <div class="apps-lower-heading">Balance Available</div>
-                            <div class="apps-lower-amount">34000</div>
-                        </div>
-                    </div>
-
-                    <div id="container" class="apps-container"
-                        onclick="location.href = '../Giving_Gifts/HTML/givedashboard.html  ';">
-                        <div class="apps-container-heading">Give / Gifts</div>
-                        <div class="apps-lower">
-                            <div class="apps-lower-heading">Balance Available</div>
-                            <div class="apps-lower-amount">34000</div>
-                        </div>
-                    </div>
-
-                    <div id="container" class="apps-container"
-                        onclick="location.href = '../Childcare/HTML/ccdashboard.html';">
-                        <div class="apps-container-heading">Childcare</div>
-                        <div class="apps-lower">
-                            <div class="apps-lower-heading">Balance Available</div>
-                            <div class="apps-lower-amount">34000</div>
-                        </div>
-                    </div>
-
-                    <div id="container" class="suggestions" onclick="location.href = '';">Suggestions</div>
-
                 </div>
-                <div class="lower-right">
 
-                    <div id="container" class="other-funds"
-                        onclick="location.href = '../Other_Funds/HTML/ofdashboard.html';">Other Funds</div>
-
-                    <div id="container" class="apps-container"
-                        onclick="location.href = '../Household/HTML/hhdashboard.html';">
-                        <div class="apps-container-heading">Household</div>
-                        <div class="apps-lower">
-                            <div class="apps-lower-heading">Balance Available</div>
-                            <div class="apps-lower-amount">34000</div>
-                        </div>
+                <div id="container" class="apps-container"
+                    onclick="location.href = '../Reimburse/HTML/reimbursedashboard.html';">
+                    <div class="apps-container-heading">Reimburse</div>
+                    <div class="apps-lower">
+                        <div class="apps-lower-heading">Balance Available</div>
+                        <div class="apps-lower-amount">34000</div>
                     </div>
-
-                    <div id="container" class="apps-container" onclick="location.href = '';">
-                        <div class="apps-container-heading">Credit-Card</div>
-                        <div class="apps-lower">
-                            <div class="apps-lower-heading">Balance Available</div>
-                            <div class="apps-lower-amount">34000</div>
-                        </div>
-                    </div>
-
-                    <div id="container" class="apps-container" onclick="location.href = '';">
-                        <div class="apps-container-heading">Loans</div>
-                        <div class="apps-lower">
-                            <div class="apps-lower-heading">Balance Available</div>
-                            <div class="apps-lower-amount">34000</div>
-                        </div>
-                    </div>
-
-                    <div id="container" class="apps-container" onclick="location.href = '';">
-                        <div class="apps-container-heading">Settings</div>
-                    </div>
-
-                    <div id="container" class="apps-container" onclick="location.href = '';">
-                        <div class="apps-container-heading">Reminders</div>
-                    </div>
-
                 </div>
+
+                <div id="container" class="apps-container"
+                    onclick="location.href = '../Goals/HTML/goalsdashboard.html';">
+                    <div class="apps-container-heading">Goals</div>
+                    <div class="apps-lower">
+                        <div class="apps-lower-heading">Balance Available</div>
+                        <div class="apps-lower-amount">34000</div>
+                    </div>
+                </div>
+
+                <div id="container" class="apps-container"
+                    onclick="location.href = '../Giving_Gifts/HTML/givedashboard.html  ';">
+                    <div class="apps-container-heading">Give / Gifts</div>
+                    <div class="apps-lower">
+                        <div class="apps-lower-heading">Balance Available</div>
+                        <div class="apps-lower-amount">34000</div>
+                    </div>
+                </div>
+
+                <div id="container" class="apps-container"
+                    onclick="location.href = '../Childcare/HTML/ccdashboard.html';">
+                    <div class="apps-container-heading">Childcare</div>
+                    <div class="apps-lower">
+                        <div class="apps-lower-heading">Balance Available</div>
+                        <div class="apps-lower-amount">34000</div>
+                    </div>
+                </div>
+
+                <div id="container" class="suggestions" onclick="location.href = '';">Suggestions</div>
+
+            </div>
+            <div class="lower-right">
+
+                <div id="container" class="other-funds"
+                    onclick="location.href = '../Other_Funds/HTML/ofdashboard.html';">Other Funds</div>
+
+                <div id="container" class="apps-container"
+                    onclick="location.href = '../Household/HTML/hhdashboard.html';">
+                    <div class="apps-container-heading">Household</div>
+                    <div class="apps-lower">
+                        <div class="apps-lower-heading">Balance Available</div>
+                        <div class="apps-lower-amount">34000</div>
+                    </div>
+                </div>
+
+                <div id="container" class="apps-container" onclick="location.href = '';">
+                    <div class="apps-container-heading">Credit-Card</div>
+                    <div class="apps-lower">
+                        <div class="apps-lower-heading">Balance Available</div>
+                        <div class="apps-lower-amount">34000</div>
+                    </div>
+                </div>
+
+                <div id="container" class="apps-container" onclick="location.href = '';">
+                    <div class="apps-container-heading">Loans</div>
+                    <div class="apps-lower">
+                        <div class="apps-lower-heading">Balance Available</div>
+                        <div class="apps-lower-amount">34000</div>
+                    </div>
+                </div>
+
+                <div id="container" class="apps-container" onclick="location.href = '';">
+                    <div class="apps-container-heading">Settings</div>
+                </div>
+
+                <div id="container" class="apps-container" onclick="location.href = '';">
+                    <div class="apps-container-heading">Reminders</div>
+                </div>
+
             </div>
         </div>
     </div>
+
 </body>
 
 </html>

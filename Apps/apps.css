@@ -8,12 +8,6 @@
 }
 
 body{
-    height: 100vh;
-    overflow: hidden;
-}
-
-
-.visible{
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -24,7 +18,7 @@ body{
     height: 100vh;
 }
 
-.visible::-webkit-scrollbar{
+body::-webkit-scrollbar{
     display: none;
 }
 
