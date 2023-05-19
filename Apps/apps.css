@@ -8,15 +8,25 @@
 }
 
 body{
+    height: 100vh;
+    overflow: auto;
+}
+
+
+.visible{
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
     width: 100%;
-    overflow: hidden;
+    height: 100vh;
 }
 
+.visible::-webkit-scrollbar{
+    display: none;
+}
 
 
 /* Loader*/
