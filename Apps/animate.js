@@ -54,24 +54,3 @@ gsap.from (".lower-right>#container",{
     duration: 0.9
 })
 
-// Leaving
-
-function leavingPage() {
-    return gsap.to(".loaderleave" , {
-        duration: 1,
-        y: "-101vh",
-        ease: Power4.easeOut,
-    }),
-    
-    gsap.to(".apps-heading" ,{
-        y : -50,
-        duration : 1,
-    }) ,
-    
-    gsap.to(".lower-container" ,{
-        y : -50,
-        duration : 1,
-
-    })
-
-}
