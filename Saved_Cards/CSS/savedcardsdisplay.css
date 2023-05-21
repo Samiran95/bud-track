@@ -27,6 +27,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 30px;
+    font-weight: 200;
     color: white;
     pointer-events: none;
     z-index: 2;
