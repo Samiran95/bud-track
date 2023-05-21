@@ -49,6 +49,10 @@ body{
     top: -10px;
 }
 
+.loaderenter::-webkit-scrollbar{
+    display: none;
+}
+
 /* Loader*/
 
 .upper{

@@ -25,22 +25,49 @@ gsap.to(".loaderenter" , {
 
 //common Entry Animation
 
-gsap.from(".upper" , {
+gsap.from(".typeofcard" , {
     y : "101vh",
     duration : 1,
-    delay : 1.45
+    delay : 1.4,
 })
 
-gsap.from(".filter-name" , {
+
+gsap.from(".filter" , {
     y : "101vh",
     duration : 1,
-    delay : 1.6
+    delay : 1.45,
 })
 
-gsap.from(".card-heading" , {
-    y : "101vh",
+gsap.from(".delete" , {
+    y : "100vh",
     duration : 1,
-    delay : 1.75
+    delay : 1.5,
+})
+
+
+gsap.from(".filter-word" , {
+    y : "100vh",
+    delay: 1.6,
+    duration : 1,
+})
+
+gsap.from(".actual-filter" , {
+    y : "101vh",
+    delay : 1.65,
+    duration : 1,
+})
+
+
+gsap.from(".saved-cards-word" , {
+    y : "101vh",
+    delay: 1.75,
+    duration : 1
+})
+
+gsap.from(".add" , {
+    y : "101vh",
+    delay: 1.8,
+    duration : 1,
 })
 
 gsap.from(".lower" , {
@@ -51,7 +78,7 @@ gsap.from(".lower" , {
 
 gsap.from(".card" , {
     y : "101vh",
-    duration : 1,
+    duration : 1.1,
     delay : 2.1,
     stagger:0.15
 })

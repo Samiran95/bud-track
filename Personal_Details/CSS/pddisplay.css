@@ -13,7 +13,45 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
+
+/* Loader*/
+.screen{
+    position: absolute;
+    top: 125px;
+    width : 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.screen-name{
+    opacity: 0;
+}
+
+.loaderenter{
+    position: absolute;
+    width: 100%;
+    height: 102vh;
+    background-color: black;
+    z-index: 1;
+    top: -10px;
+}
+
+.loaderenter::-webkit-scrollbar{
+    display: none;
+}
+
+
+/* Loader*/
+
 
 .upper{
     height: 10vh;
@@ -65,9 +103,45 @@ form{
 
 .middle{
     display: flex;
-    width: 85%;
-    height: 8vh;
+    width: 80vw;
+    margin: 20px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+/* filter*/
+
+
+.filter-name{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filter-word{
+    font-weight: 600;
+}
+
+.actual-filter{
+    margin-left: 20px;
+    padding: 4px 13px 4px 13px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* filter*/
+
+.card-heading{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .saved-cards-word{
@@ -89,7 +163,7 @@ form{
 
 .lower{
     width: 100%;
-    height: 79vh;
+    height: 74.5vh;
     overflow-y: scroll;
     align-items: center;
 }   
@@ -100,7 +174,7 @@ form{
 
 .lower-section{
     width: 100%;
-    padding: 25px ;
+    padding: 30px ;
     display: flex;
     background-color: #ebebeb;
     border-radius: 50px;
@@ -176,7 +250,7 @@ form{
     width: 100%;
 }
 
-p{
+.title{
     flex: 2;
     font-size: 13px;
     font-weight: 700;

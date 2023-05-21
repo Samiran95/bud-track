@@ -26,7 +26,6 @@ gsap.to(".loaderenter" , {
 //common Entry Animation
 
 
-
 gsap.from(".typeofcard" , {
     y : "101vh",
     duration : 1,
