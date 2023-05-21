@@ -6,10 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/pdform.css">
+    <script src="../../Common/JS/gsap.min.js" defer></script>
+    <script src="../JS/Animation/cardsformanimate.js" defer></script>
     <title>Personal Details Form</title>
 </head>
 
 <body>
+    <!---Loader-->
+    <div class="loaderenter"></div>
+    <div class="loaderleave"></div>
+    <div class="screen">
+        <p class="screen-name">P E R S O N A L</p>
+        <p class="screen-name">D E T A I L S</p>
+        <p class="screen-name">F O R M</p>
+    </div>
+    <!---Loader-->
     <div class="upper">
         <p class="heading-word">P E R S O N A L</p>
         <p class="heading-word1">D E T A I L S</p>
@@ -17,16 +28,36 @@
 
     <div class="lower">
         <form>
-            <input type="date" class="date-input">
-            <input type="text" class="reason-input" placeholder="Reason">
-            <select class="type-of-payment">
-                <option value="">Mode of payment</option>
-                <option value="UPI">UPI</option>
-                <option value="Online">Online</option>
-                <option value="Cash">Cash</option>
+            <input id="input" type="text" class="text-input" placeholder="Full Name">
+            <input id="input" type="text" class="date-input" placeholder="Date of Birth" onfocus="(this.type = 'date')"
+                onblur="(this.type = 'text')">
+            <input id="input" type="text" class="text-input" placeholder="Full Address 1">
+            <input id="input" type="text" class="text-input" placeholder="Full Address 2">
+            <input id="input" type="text" class="text-input" placeholder="Blood Group">
+            <input id="input" type="text" class="date-input" placeholder="Issued Date" onfocus="(this.type = 'date')"
+                onblur="(this.type = 'text')">
+            <input id="input" type="text" class="date-input" placeholder="Expiry Date" onfocus="(this.type = 'date')"
+                onblur="(this.type = 'text')">
+            <input id="input" type="text" class="text-input" placeholder="Issued From (State Name)">
+            <input id="input" type="text" class="text-input" placeholder="Father's Name">
+            <input id="input" type="text" class="text-input" placeholder="Mother's Name">
+            <select id="input" class="selection">
+                <option value="">Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Transgender">Transgender</option>
                 <option value="Others">Others</option>
             </select>
-            <input type="text" class="amount-input" placeholder="Amount">
+
+            <select id="input" class="selection">
+                <option value="">For?</option>
+                <option value="Self">Self</option>
+                <option value="Parents">Parents</option>
+                <option value="Spouse">Spouse</option>
+                <option value="Child">Child</option>
+                <option value="Others">Others</option>
+            </select>
+
         </form>
         <div class="button">
             <button type="button" class="submit" onclick="">Submit</button>

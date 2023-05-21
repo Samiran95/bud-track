@@ -122,6 +122,10 @@ form{
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.50);
 }
 
+.card:nth-last-child(1){
+    margin-right: 0px;
+}
+
 .card-upper{
     height: 10vh;
     width: 100%;
