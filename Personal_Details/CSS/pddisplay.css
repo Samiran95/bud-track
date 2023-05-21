@@ -27,6 +27,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 30px;
+    font-weight: 200;
     color: white;
     pointer-events: none;
     z-index: 2;
@@ -228,6 +229,13 @@ form{
     padding: 15px 15px 20px 15px;
 }
 
+.number{
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    word-wrap: break-word;
+}
 
 .name{
     display: flex;

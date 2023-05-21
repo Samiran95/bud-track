@@ -25,28 +25,33 @@ body::-webkit-scrollbar{
 
 
 /* Loader*/
-.screen-name{
+.screen{
     position: absolute;
-    top: 100px;
+    top: 125px;
     width : 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 30px;
     font-weight: 200;
     color: white;
     pointer-events: none;
-    opacity: 0;
     z-index: 2;
+}
+
+.screen-name{
+    opacity: 0;
 }
 
 .loaderenter{
     position: absolute;
     width: 100%;
-    height: 101vh;
+    height: 102vh;
     background-color: black;
     z-index: 1;
+    top: -10px;
 }
 
 .loaderenter::-webkit-scrollbar{

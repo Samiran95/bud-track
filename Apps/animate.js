@@ -1,9 +1,9 @@
-//common Entry Animation
 gsap.to(".screen-name" ,{
     y: -100,
     opacity: 1,
     duration : 0.5,
-    ease: Power2.easeOut
+    ease: Power2.easeOut,
+    stagger: 0.05
 })
 
 gsap.to(".screen-name" ,{
@@ -11,8 +11,8 @@ gsap.to(".screen-name" ,{
     opacity: 0,
     duration : 0.5,
     delay: 0.8,
-    ease: Power2.easeOut
-
+    ease: Power2.easeOut,
+    stagger: 0.05
 })
 
 gsap.to(".loaderenter" , {
@@ -23,7 +23,6 @@ gsap.to(".loaderenter" , {
 })
 
 //common Entry Animation
-
 
 gsap.from(".apps-heading" ,{
     opacity: 0,
