@@ -7,22 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/upcomingtripform.css">
     <link rel="stylesheet" href="tripshistory.html">
+    <script src="../../Common/JS/gsap.min.js" defer></script>
+    <script src="../JS/Animation/utanimate.js" defer></script>
     <title>Upcoming Trip</title>
 </head>
 
 <body>
-    <button type="button" class="back-button"><</button>
+            <!---Loader-->
+            <div class="loaderenter"></div>
+            <div class="screen">
+                <p class="screen-name">U P C O M I N G</p>
+                <p class="screen-name">T R I P S</p>
+            </div>
+            <!---Loader-->
     <div class="upper">
-        <p class="heading-word1">U P C O M I N G</p>
-        <p class="heading-word2">T R I P S</p>
+        <p class="heading-word">U P C O M I N G</p>
+        <p class="heading-word1">T R I P S</p>
     </div>
 
     <div class="lower">
         <form>
-            <input type="text" class="date-input" placeholder="Todays Date" onfocus="(this.type = 'date')" onblur="(this.type = 'text')">
-            <input type="text" class="tripname-input" placeholder="Trip Name">
-            <input type="text" class="date-input" placeholder="Planned Date" onfocus="(this.type = 'date')" onblur="(this.type = 'text')">
-            <input type="text" class="amount-input" placeholder="Expected Amount">
+            <input id="input" type="text" class="date-input" placeholder="Todays Date" onfocus="(this.type = 'date')" onblur="(this.type = 'text')">
+            <input id="input" type="text" class="tripname-input" placeholder="Trip Name">
+            <input id="input" type="text" class="date-input" placeholder="Planned Date" onfocus="(this.type = 'date')" onblur="(this.type = 'text')">
+            <input id="input" type="text" class="amount-input" placeholder="Expected Amount">
         </form>
         <div class="button">
             <button type="button" class="submit" onclick="">Submit</button>

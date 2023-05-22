@@ -48,9 +48,9 @@ gsap.from(".lower" , {
 
 gsap.from(".transaction-data" , {
     y : "101vh",
-    duration : 1.6,
+    duration : 1.3,
     delay : 1.6,
-    stagger: 0.15
+    stagger: 0.09
 })
 
 

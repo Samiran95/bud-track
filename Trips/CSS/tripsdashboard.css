@@ -13,7 +13,49 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* Loader*/
+.screen{
+    position: absolute;
+    top: 100px;
+    width : 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 200;
+    color: white;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.screen-name{
+    opacity: 0;
+}
+
+.loaderenter{
+    position: absolute;
+    width: 100%;
+    height: 102vh;
+    background-color: black;
+    z-index: 1;
+    top: -10px;
+}
+
+.loaderenter::-webkit-scrollbar{
+    display: none;
+}
+
+/* Loader*/
+
 
 .upper{
     width: 80vw;
@@ -65,6 +107,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .trip-balance {
@@ -99,10 +142,15 @@ body {
 
 .lower {
     height: 59vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
+}
+
+.lower-triplist{
+    width: 100%;
 }
 
 .lower::-webkit-scrollbar {
@@ -115,11 +163,9 @@ body {
     justify-content: space-evenly;
     align-items: center;
     background-color: #ebebeb;
-
     width: 80vw;
     margin-top: 15px;
     padding: 10px;
-    background-color: #ebebeb;
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -170,9 +216,105 @@ body {
 }
 
 .triplist {
-    width: 93vw;
-    height: 37vh;
+    padding: 20px;
+    width: 100%;
+    height: 41vh;
     background-color: #ebebeb;
-    border-radius: 30px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.triplist::-webkit-scrollbar{
+    display: none;
+}
+
+.list-container{
+    min-width: 100%;
+    height: 100%;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between ;
+    padding: 10px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.list:nth-last-child(1){
+    margin-right: 0px;
+}
+
+.list-upper{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upper-heading{
+    font-size: 25px;
+    color: grey;
+    font-weight: 700;
+}
+
+.upper-content{
+    color: orange;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.list-lower{
+    flex : 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-left{
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
 }
+
+.list-right{
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.list-heading{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.list-content{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#days-left{
+    color: #6dff29;
+}
+
+#balance-available{
+    color: #6dff29;
+}
+
+#amount-available{
+    color: #6dff29;
+}
+
