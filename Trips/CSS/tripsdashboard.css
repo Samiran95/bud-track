@@ -231,7 +231,7 @@ body::-webkit-scrollbar{
 }
 
 .list-container{
-    min-width: 100%;
+    min-width: 90%;
     height: 100%;
     margin-right: 20px;
     background-color: white;
@@ -244,7 +244,7 @@ body::-webkit-scrollbar{
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-.list:nth-last-child(1){
+.list-container:nth-last-child(1){
     margin-right: 0px;
 }
 
@@ -258,7 +258,7 @@ body::-webkit-scrollbar{
 }
 
 .upper-heading{
-    font-size: 25px;
+    font-size: 20px;
     color: grey;
     font-weight: 700;
 }
@@ -297,12 +297,12 @@ body::-webkit-scrollbar{
 }
 
 .list-heading{
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 600;
 }
 
 .list-content{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
 }
 
