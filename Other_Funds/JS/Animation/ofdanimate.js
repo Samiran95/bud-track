@@ -34,20 +34,20 @@ gsap.from(".heading" , {
     opacity: 0
 })
 
-gsap.from(".trip-card" , {
+gsap.from(".of-card" , {
     duration: 1,
     y: "101vh",
     delay : 1.8,
 })
 
-gsap.from(".trip-balance-word" , {
+gsap.from(".of-balance-word" , {
     duration: 1,
     y: "100",
     delay : 1.9,
     opacity: 0
 })
 
-gsap.from(".trip-balance-amount" , {
+gsap.from(".of-balance-amount" , {
     duration: 1,
     y: "100",
     delay : 2.1,
@@ -68,29 +68,29 @@ gsap.from(".lower-button" , {
 })
 
 
-gsap.from(".triplist-word" , {
+gsap.from(".oflist-word" , {
     duration: 1,
     y: "101vh",
     delay : 2,
 })
 
-gsap.from(".trips-add" , {
+gsap.from(".add" , {
     duration: 1,
     y: "101vh",
     delay : 2.05,
 })
 
-gsap.from(".triplist" , {
+gsap.from(".oflist" , {
     duration: 1,
     y: "101vh",
     delay : 2.15,
 })
 
 gsap.from(".list-container" , {
-    duration: 1,
+    duration: 0.8,
     y: 300,
     delay : 2.6,
-    stagger: 0.1
+    stagger: 0.15
 
 })
 
