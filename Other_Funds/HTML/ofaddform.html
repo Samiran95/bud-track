@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../HTML/tripshistory.html">
     <script src="../../Common/JS/gsap.min.js" defer></script>
     <script src="../JS/Animation/ofexpenseanimate.js" defer></script>
-    <title>Other Funds Expense Form</title>
+    <title>Other Funds Add Form</title>
 </head>
 
 <body>
@@ -17,31 +17,23 @@
         <div class="loaderenter"></div>
         <div class="screen">
             <p class="screen-name">O T H E R  F U N D S</p>
-            <p class="screen-name">E X P E N S E</p>
+            <p class="screen-name">A D D</p>
             <p class="screen-name">F O R M</p>
         </div>
         <!---Loader-->
     <div class="upper">
-        <p class="heading-word">O T H E R</p>
+        <p class="heading-word">A D D</p>
         <p class="heading-word1">F U N D S</p>
     </div>
 
     <div class="lower">
         <form>
             <input id="input" type="date" class="date-input">
-            <input id="input" type="text" class="reason-input" placeholder="Reason">
-            <select id="input" class="type-of-payment">
-                <option value="">Mode of payment</option>
-                <option value="UPI">UPI</option>
-                <option value="Online">Online</option>
-                <option value="Cash">Cash</option>
-                <option value="Others">Others</option>
-            </select>
+            <input id="input" type="text" class="reason-input" placeholder="Fund Name">
             <input id="input" type="number" class="amount-input" placeholder="Amount">
         </form>
         <div class="button">
             <button type="button" class="submit" onclick="">Submit</button>
-            <button type="button" class="history" onclick="location.href = '../HTML/ofhistory.html';">History</button>
         </div>
     </div>
 

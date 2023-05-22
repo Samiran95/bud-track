@@ -5,17 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/hhhistory.css">
-    <title>Household History</title>
+    <link rel="stylesheet" href="../CSS/ofhistory.css">
+    <script src="../../Common/JS/gsap.min.js" defer></script>
+    <script src="../JS/Animation/ofhistoryanimate.js" defer></script>
+    <title>Other Funds History</title>
 </head>
 
 <body>
-    <div class="upper">
-        <div class="filter-list"></div>
-        <button type="button" class="filter-button">Filter</button>
-        <button type="button" class="delete-button" on>Delete ?</button>
+    <!---Loader-->
+    <div class="loaderenter"></div>
+    <div class="screen">
+        <p class="screen-name">O T H E R</p>
+        <p class="screen-name">F U N D S</p>
+        <p class="screen-name">H I S T O R Y</p>
     </div>
-    <p class="transactions-word">Household Transaction</p>
+    <!---Loader-->
+    <div class="upper">
+        <p class="transactions-word">Transaction</p>
+        <button type="button" class="delete" onclick="location.href = '../HTML/upcomingtripform.html';">Delete</button>
+    </div>
     <div class="lower">
         <div class="transaction-data">
             <div class="transaction-date">12/31/2023</div>
