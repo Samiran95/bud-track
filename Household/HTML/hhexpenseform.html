@@ -5,31 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/hhsexpenseform.css">
-    <title>Trips Form</title>
+    <link rel="stylesheet" href="../CSS/hhexpenseform.css">
+    <script src="../../Common/JS/gsap.min.js" defer></script>
+    <script src="../JS/Animation/hhexpformanimate.js" defer></script>
+    <title>Household Expense Form</title>
 </head>
 
 <body>
+    <!---Loader-->
+    <div class="loaderenter"></div>
+    <div class="screen">
+        <p class="screen-name">H O U S E H O L D</p>
+        <p class="screen-name">E X P E N S E</p>
+        <p class="screen-name">F O R M</p>
+    </div>
+    <!---Loader-->
+
     <div class="upper">
         <p class="heading-word">HOUSEHOLD</p>
     </div>
 
     <div class="lower">
         <form>
-            <input type="date" class="date-input">
-            <input type="text" class="reason-input" placeholder="Reason">
-            <select class="type-of-payment">
+            <input id="input" type="date" class="date-input">
+            <input id="input" type="text" class="reason-input" placeholder="Reason">
+            <select id="input" class="type-of-payment">
                 <option value="">Mode of payment</option>
                 <option value="UPI">UPI</option>
                 <option value="Online">Online</option>
                 <option value="Cash">Cash</option>
                 <option value="Others">Others</option>
             </select>
-            <input type="text" class="amount-input" placeholder="Amount">
+            <input id="input" type="text" class="amount-input" placeholder="Amount">
         </form>
         <div class="button">
             <button type="button" class="submit" onclick="">Submit</button>
-            <button type="button" class="income-history" onclick="">History</button>
+            <button type="button" class="history" onclick="">History</button>
         </div>
     </div>
 

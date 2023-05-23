@@ -392,6 +392,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 
@@ -482,6 +483,10 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+}
+
+.data-containers1:nth-last-child(1){
+    margin-right: 0px;
 }
 
 .month-data-container{
