@@ -7,11 +7,58 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* Loader*/
+.screen{
+    position: absolute;
+    top: 100px;
+    width : 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 200;
+    color: white;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.screen-name{
+    opacity: 0;
+}
+
+.loaderenter{
+    position: absolute;
+    width: 100%;
+    height: 102vh;
+    background-color: black;
+    z-index: 1;
+    top: -10px;
+}
+
+.loaderenter::-webkit-scrollbar{
+    display: none;
+}
+
+/* Loader*/
+
+
 .upper{
+    width: 100%;
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -40,6 +87,7 @@ body{
 }
 
 .middle{
+    width: 100%;
     height: 20vh;
     display: flex;
     align-items: center;
@@ -48,14 +96,58 @@ body{
 
 .main-balance{
     width: 90%;
-    height: 135px;
+    padding: 10px;
+    height: 160px;
     border-radius: 40px;
     background-color: black;
     background: linear-gradient(190deg, rgba(42,42,42,1) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.main-balance-upper{
+    flex: 2;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-balance-lower{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.adjustment-button{
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 30px 10px 55px 30px;
+    color: black;
+    font-weight: 600;
+
+}
+
+.balance-available-word{
+    color: white;
+}
+
+.balance-amount{
+    font-size: 30px;
+    font-weight: 600;
+    color: #4dff7c;
 }
 
 
 .lower{
+    width: 100%;
     height: 64vh;
     padding: 10px;
     background-color:#ebebeb;

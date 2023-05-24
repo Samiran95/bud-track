@@ -6,19 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="balancedashboard.css">
-    <link rel="stylesheet" href="../../Trends/Wants/wantstrends.html">
+    <link rel="stylesheet" href="../../In_Between/Adjustments/HTML/adjustments.html">
+    <script src="../../Common/JS/gsap.min.js" defer></script>
+    <script src="../JS/balanceanimate.js" defer></script>
     <title>Balances</title>
 </head>
 
 <body>
+    <!---Loader-->
+    <div class="loaderenter"></div>
+    <div class="screen">
+        <p class="screen-name">B A L A N C E S</p>
+        <p class="screen-name">D A S H B O A R D</p>
+        <p class="screen-name"></p>
+    </div>
+    <!--Loader-->
     <div class="upper">
         <div class="upper-heading">
-        <p class="heading">Balances</p>
-        <p class="heading2">Available</p>
-    </div>
+            <p class="heading">Balances</p>
+            <p class="heading2">Available</p>
+        </div>
     </div>
     <div class="middle">
         <div class="main-balance">
+            <div class="main-balance-upper">
+                <p class="balance-available-word">Bank Balance Available</p>
+                <div class="balance-amount">2455566789</div>
+            </div>
+            <div class="main-balance-lower">
+                <button type="button" class="adjustment-button" onclick="location.href = '../../In_Between/Adjustments/HTML/adjustments.html';">Adjustments ?</button>
+            </div>
+
         </div>
     </div>
     <div class="lower">
@@ -33,7 +51,7 @@
                     <p class="sign">></p>
                 </div>
             </div>
-            
+
             <div class="container" onclick="location.href = '../../Trends/Wants/wantstrends.html';">
                 <div class="container-upper">
                     <p class="container-heading">Wants</p>

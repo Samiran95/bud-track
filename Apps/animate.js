@@ -42,14 +42,12 @@ gsap.from (".lower-left>#container",{
     duration : 1,
     delay: 2.2,
     stagger : 0.1,
-    duration: 0.9
 })
 
 gsap.from (".lower-right>#container",{
     y: "101vh",
     duration : 1,
-    delay: 2.2,
+    delay: 2.3,
     stagger : 0.1,
-    duration: 0.9
 })
 
