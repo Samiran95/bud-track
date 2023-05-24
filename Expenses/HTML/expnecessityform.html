@@ -5,15 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/expnecessityform.css">
-    <link rel="stylesheet" href="../HTML/expnecessitydisplay.html">
+    <link rel="stylesheet" href="../CSS/expform.css">
+    <script src="../../Common/JS/gsap.min.js" defer></script>
+    <script src="../JS/Animation/expformanimate.js" defer></script>
     <title>Expenses Necessity Form</title>
 </head>
 
 <body>
+    <!---Loader-->
+    <div class="loaderenter"></div>
+    <div class="screen">
+        <p class="screen-name">E X P E N S E S</p>
+        <p class="screen-name">N E C E S S I T Y</p>
+        <p class="screen-name">F O R M</p>
+    </div>
+    <!---Loader-->
     <div class="upper">
         <p class="heading-word">E X P E N S E</p>
-        <p class="sub-heading-word">N E C E S S I T Y</p>
+        <p class="heading-word1">N E C E S S I T Y</p>
     </div>
     <div class="middle">
         <div class="middle1"></div>
@@ -21,26 +30,27 @@
     </div>
     <div class="lower">
         <form>
-            <input type="date" class="date-input">
-            <select class="type-of-expenses">
+            <input id="input" type="date" class="date-input">
+            <select id="input" class="type-of-expenses">
                 <option value="">Type Of Expenses</option>
                 <option value="Salary">Salary</option>
                 <option value="Business">Business</option>
                 <option value="Others">Others</option>
             </select>
-            <input type="text" class="reason-input" placeholder="Reason ?">
-            <select class="type-of-payment">
+            <input id="input" type="text" class="reason-input" placeholder="Reason ?">
+            <select id="input" class="type-of-payment">
                 <option value="">Mode of payment</option>
                 <option value="UPI">UPI</option>
                 <option value="Online">Online</option>
                 <option value="Cash">Cash</option>
                 <option value="Others">Others</option>
             </select>
-            <input type="text" class="amount-input" placeholder="Amount">
+            <input id="input" type="text" class="amount-input" placeholder="Amount">
         </form>
         <div class="button">
             <button type="button" class="submit" onclick="">Submit</button>
-            <button type="button" class="expense-history" onclick="location.href = '../HTML/expnecessitydisplay.html';">History</button>
+            <button type="button" class="history"
+                onclick="location.href = '../HTML/expnecessitydisplay.html';">History</button>
         </div>
     </div>
 

@@ -6,16 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/expdisplay.css">
+    <script src="../../Common/JS/gsap.min.js" defer></script>
+    <script src="../JS/Animation/expdisplayanimate.js" defer></script>
     <title>Expenses-Wants Display</title>
 </head>
 
 <body>
+        <!---Loader-->
+        <div class="loaderenter"></div>
+        <div class="screen">
+            <p class="screen-name">E X P E N S E S</p>
+            <p class="screen-name">W A N T S</p>
+            <p class="screen-name">H I S T O R Y</p>
+        </div>
+        <!---Loader-->
     <div class="upper">
-        <div class="filter-list"></div>
-        <button type="button" class="filter-button">Filter</button>
-        <button type="button" class="delete-button" on>Delete ?</button>
+        <form>
+            <select class="typeof-necessity">
+                <option value="">Filter by</option>
+                <option value="Rent">Rent</option>
+                <option value="Bills">Bills</option>
+                <option value="Food">Food</option>
+                <option value="Others">Others</option>
+            </select>
+            <button type="button" class="filter">Filter</button>
+            <button type="button" class="delete">Delete ?</button>
+        </form>
     </div>
-    <p class="transactions-word">Expense-Wants Transaction</p>
+    <div class="middle">
+        <div class="filter-name">
+            <p class="filter-word">Filter By :</p>
+            <p class="actual-filter">None</p>
+        </div>
+        <div class="card-heading">
+            <p class="transaction-heading">Expenses-Necessity Transactions</p>
+        </div>
+    </div>
     <div class="lower">
         <div class="transaction-data">
             <div class="transaction-date">12/31/2023</div>

@@ -24,18 +24,20 @@ gsap.to(".loaderenter" , {
 
 //common Entry Animation
 
-gsap.from(".heading" ,{
-    opacity: 0,
-    y : 100,
-    duration : 0.5,
-    delay : 1.7
+gsap.from(".heading" , {
+    duration: 1,
+    y: 100,
+    ease: Power4.easeOut,
+    delay : 1.8,
+    opacity: 0
 })
 
-gsap.from(".heading2" ,{
-    opacity: 0,
-    y : 100,
-    duration : 0.5,
-    delay : 1.8
+gsap.from(".heading2" , {
+    duration: 1,
+    y: 100,
+    ease: Power4.easeOut,
+    delay : 1.85,
+    opacity: 0
 })
 
 gsap.from(".main-balance" ,{
@@ -46,23 +48,23 @@ gsap.from(".main-balance" ,{
 
 gsap.from(".balance-available-word" ,{
     y : 100,
-    duration : 1,
+    duration : 0.8,
     opacity: 0,
-    delay : 2
+    delay : 2.3,
 })
 
 gsap.from(".balance-amount" ,{
     y : 100,
-    duration : 1,
+    duration : 0.8,
     opacity: 0,
-    delay : 2.2
+    delay : 2.5,
 })
 
 gsap.from(".main-balance-lower" ,{
     y : 100,
-    duration : 1,
+    duration : 0.8,
     opacity: 0,
-    delay : 2.4
+    delay : 2.7,
 })
 
 gsap.from (".lower",{
