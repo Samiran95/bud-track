@@ -7,10 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../CSS/investmentsform.css">
     <link rel="stylesheet" href="incomedisplay.html">
+    <script src="../../../Common/JS/gsap.min.js" defer></script>
+    <script src="../../JS/Animate/investform.js" defer></script>
     <title>Other Investments Form</title>
 </head>
 
 <body>
+        <!---Loader-->
+        <div class="loaderenter"></div>
+        <div class="screen">
+            <p class="screen-name">O T H E R S</p>
+            <p class="screen-name">S E L L</p>
+            <p class="screen-name">F O R M</p>
+        </div>
+        <!---Loader-->
     <div class="upper">
         <p class="heading-word">O T H E R</p>
         <p class="heading-word1">S E L L</p>
@@ -21,14 +31,14 @@
     </div>
     <div class="lower">
         <form>
-            <input type="date" class="date-input">
-            <select class="type-of-investment">
+            <input id="input" type="date" class="date-input">
+            <select id="input" class="type-of-investment">
                 <option value="">Type of Investments</option>
                 <option value="Mutual Fund">Mutual Fund</option>
                 <option value="Others">Others</option>
             </select>
-            <input type="text" class="name-input" placeholder="Investment Name">
-            <select class="type-of-payment">
+            <input id="input" type="text" class="name-input" placeholder="Investment Name">
+            <select id="input" class="type-of-payment">
                 <option value="">Mode of payment</option>
                 <option value="UPI">UPI</option>
                 <option value="Online">Online</option>
@@ -36,11 +46,11 @@
                 <option value="Cash">Cheque</option>
                 <option value="Others">Others</option>
             </select>
-            <input type="number" class="amount-input" placeholder="Amount">
+            <input id="input" type="number" class="amount-input" placeholder="Amount">
         </form>
         <div class="button">
             <button type="button" class="submit" onclick="">Submit</button>
-            <button type="button" class="income-history"
+            <button type="button" class="history"
                 onclick="location.href = 'incomedisplay.html';">History</button>
         </div>
     </div>

@@ -7,10 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../CSS/investmentsform.css">
     <link rel="stylesheet" href="incomedisplay.html">
-    <title>Income Form</title>
+    <script src="../../../Common/JS/gsap.min.js" defer></script>
+    <script src="../../JS/Animate/investform.js" defer></script>
+    <title>Shares Sell Form</title>
 </head>
 
 <body>
+    <!---Loader-->
+    <div class="loaderenter"></div>
+    <div class="screen">
+        <p class="screen-name">S H A R E</p>
+        <p class="screen-name">S E L L</p>
+        <p class="screen-name">F O R M</p>
+    </div>
+    <!---Loader-->
     <div class="upper">
         <p class="heading-word">SHAREMARKET</p>
         <p class="heading-word1">S E L L</p>
@@ -21,21 +31,21 @@
     </div>
     <div class="lower">
         <form>
-            <input type="date" class="date-input">
-            <input type="text" class="name-input" placeholder="Stock Name">
-            <input type="number" class="quantity-input" placeholder="Quantity">
-            <select class="type-of-payment">
+            <input id="input" type="date" class="date-input">
+            <input id="input" type="text" class="name-input" placeholder="Stock Name">
+            <input id="input" type="number" class="quantity-input" placeholder="Quantity">
+            <select id="input" class="type-of-payment">
                 <option value="">Mode of payment</option>
                 <option value="UPI">UPI</option>
                 <option value="Online">Online</option>
                 <option value="Cash">Cash</option>
                 <option value="Others">Others</option>
             </select>
-            <input type="number" class="amount-input" placeholder="Amount">
+            <input id="input" type="number" class="amount-input" placeholder="Amount">
         </form>
         <div class="button">
             <button type="button" class="submit" onclick="">Submit</button>
-            <button type="button" class="income-history"
+            <button type="button" class="history"
                 onclick="location.href = 'incomedisplay.html';">History</button>
         </div>
     </div>
