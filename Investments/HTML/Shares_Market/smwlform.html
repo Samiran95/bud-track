@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/investmentsform.css">
+    <link rel="stylesheet" href="incomedisplay.html">
+    <script src="../../../Common/JS/gsap.min.js" defer></script>
+    <script src="../../JS/Animate/investform.js" defer></script>
+    <title>Shares Watchlist Form</title>
+</head>
+
+<body>
+    <!---Loader-->
+    <div class="loaderenter"></div>
+    <div class="screen">
+        <p class="screen-name">S H A R E S</p>
+        <p class="screen-name">W A T C H</p>
+        <p class="screen-name">L I S T</p>
+    </div>
+    <!---Loader-->
+    <div class="upper">
+        <p class="heading-word">SHAREMARKET</p>
+        <p class="heading-word1">W A T C H L I S T</p>
+    </div>
+    <div class="middle">
+        <div class="middle1"></div>
+        <div class="middle2"></div>
+    </div>
+    <div class="lower">
+        <form>
+            <input id="input" type="date" class="date-input">
+            <input id="input" type="text" class="name-input" placeholder="Stock Name">
+            <input id="input" type="number" class="quantity-input" placeholder="Quantity">
+            <select id="input" class="type-of-payment">
+                <option value="">Mode of payment</option>
+                <option value="UPI">UPI</option>
+                <option value="Online">Online</option>
+                <option value="Cash">Cash</option>
+                <option value="Others">Others</option>
+            </select>
+            <input id="input" type="number" class="amount-input" placeholder="Amount">
+        </form>
+        <div class="button">
+            <button type="button" class="submit" onclick="">Submit</button>
+            <button type="button" class="history" onclick="location.href = 'incomedisplay.html';">History</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
