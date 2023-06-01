@@ -58,6 +58,7 @@ body::-webkit-scrollbar{
 
 .upper{
     display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -71,6 +72,11 @@ body::-webkit-scrollbar{
 .heading-word{
     font-size: 40px;
 }
+
+.heading-word1{
+    font-size: 35px;
+}
+
 .middle{
     display: flex;
     justify-content: space-evenly;

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/tripsexpenseform.css">
+    <link rel="stylesheet" href="../HTML/tripsinvsellhist.html">
+    <script src="../../Common/JS/gsap.min.js" defer></script>
+    <script src="../JS/Animation/tripformanimate.js" defer></script>
+    <title>Trips Investment Sell</title>
+</head>
+
+<body>
+        <!---Loader-->
+        <div class="loaderenter"></div>
+        <div class="screen">
+            <p class="screen-name">T R I P S</p>
+            <p class="screen-name">I N V E S T M E N T</p>
+            <p class="screen-name">S E L L</p>
+        </div>
+        <!---Loader-->
+    <div class="upper">
+        <p class="heading-word">I N V E S T M E N T</p>
+        <p class="heading-word1">S E L L</p>
+    </div>
+
+    <div class="lower">
+        <form>
+            <input id="input" type="date" class="date-input">
+            <input id="input" type="text" class="tripname-input" placeholder="Investment Name">
+            <select id="input" class="type-of-payment">
+                <option value="">Mode of payment</option>
+                <option value="UPI">UPI</option>
+                <option value="Online">Online</option>
+                <option value="Cash">Cash</option>
+                <option value="Others">Others</option>
+            </select>
+            <input id="input" type="number" class="amount-input" placeholder="Amount">
+        </form>
+        <div class="button">
+            <button type="button" class="submit" onclick="">Submit</button>
+            <button type="button" class="history" onclick="location.href = '../HTML/tripsinvsellhist.html';">History</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
