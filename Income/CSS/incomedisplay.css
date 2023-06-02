@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,23 +9,77 @@
 
 body{
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.upper {
+/* Loader*/
+.screen{
+    position: absolute;
+    top: 125px;
+    width : 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 200;
+    color: white;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.screen-name{
+    opacity: 0;
+}
+
+.loaderenter{
+    position: absolute;
+    width: 100%;
+    height: 102vh;
+    background-color: black;
+    z-index: 1;
+    top: -10px;
+}
+
+.loaderenter::-webkit-scrollbar{
+    display: none;
+}
+
+/* Loader*/
+
+
+.upper{
     height: 10vh;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.filter-list {
-    width: 40vw;
+form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.typeof-necessity{
+    width: 37vw;
     height: 50px;
     background-color: #ebebeb;
+    text-align: center;
+    padding: 10px;
+    border: none;
     border-radius: 30px;
 }
 
-.filter-button {
+
+.filter{
     width: 90px;
     height: 40px;
     font-size: 14px;
@@ -34,10 +88,9 @@ body{
     border: none;
     background-color: black;
     color: white;
-
 }
 
-.delete-button {
+.delete{
     width: 90px;
     height: 40px;
     font-size: 14px;
@@ -46,20 +99,63 @@ body{
     border: none;
     background-color: black;
     color: white;
-
 }
 
-.transactions-word {
-    margin: 10px 0px 5px 15px;
+.middle{
+    display: flex;
+    width: 80vw;
+    margin: 20px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* filter*/
+.filter-name{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filter-word{
+    font-weight: 600;
+}
+
+.actual-filter{
+    margin-left: 20px;
+    padding: 4px 13px 4px 13px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* filter*/
+
+
+.card-heading{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.transaction-heading{
     font-size: 18px;
     font-weight: 700;
 }
 
-.lower {
-    height: 81vh;
+
+.lower{
+    height: 89.5vh;
+    width: 100%;
     padding: 15px;
     background-color: #ebebeb;
-    border-radius: 45px;
+    border-radius: 40px;
     overflow-y: scroll;
 }
 
@@ -68,9 +164,9 @@ body{
 }
 
 .transaction-data{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     width: 100%;
-    height: 80px;
+    height: 70px;
     background-color: black;
     background: linear-gradient(190deg, rgba(42,42,42,1) 0%, rgba(0,0,0,1) 100%);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 4px;
@@ -81,11 +177,16 @@ body{
     overflow: hidden;
 }
 
+.transaction-data:nth-last-child(1){
+    margin-bottom: 0px;
+}
+
 .transaction-date{
     min-width: 22vw;
     height: 100%;
     background: rgb(129,227,188);
     background: linear-gradient(108deg, rgba(129,227,188,1) 0%, rgba(180,249,137,1) 100%);
+    box-shadow: 0px 0px 7px 0px rgb(129,227,188);
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -129,6 +230,7 @@ body{
 }
 
 .transaction-amount{
-    color: rgb(129,227,188);
+color: rgb(129,227,188) ;
     font-size: 17px;
+    font-weight: 600;
 }

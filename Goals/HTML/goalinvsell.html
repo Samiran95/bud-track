@@ -6,28 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/goalsexpenseform.css">
+    <link rel="stylesheet" href="goalinvsellhist.html">
     <script src="../../Common/JS/gsap.min.js" defer></script>
     <script src="../JS/Animation/goalsformanimate.js" defer></script>
-    <title>Goals Form</title>
+    <title>Goals Investment Purchase Form</title>
 </head>
 
 <body>
-        <!---Loader-->
-        <div class="loaderenter"></div>
-        <div class="screen">
-            <p class="screen-name">G O A L S</p>
-            <p class="screen-name">E X P E N S E</p>
-            <p class="screen-name">F O R M</p>
-        </div>
-        <!---Loader-->
+    <!---Loader-->
+    <div class="loaderenter"></div>
+    <div class="screen">
+        <p class="screen-name">G O A L S</p>
+        <p class="screen-name">I N V E S T M E N T</p>
+        <p class="screen-name">S E L L</p>
+    </div>
+    <!---Loader-->
     <div class="upper">
-        <p class="heading-word">G O A L S</p>
+        <p class="heading-word">I N V E S T M E N T</p>
+        <p class="heading-word1">S E L L</p>
+
     </div>
 
     <div class="lower">
         <form>
             <input id="input" type="date" class="text-input">
-            <input id="input" type="text" class="text-input" placeholder="Reason">
+            <input id="input" type="text" class="text-input" placeholder="Investment Name">
             <select id="input" class="text-input">
                 <option value="">Mode of payment</option>
                 <option value="UPI">UPI</option>
@@ -39,7 +42,8 @@
         </form>
         <div class="button">
             <button type="button" class="submit" onclick="">Submit</button>
-            <button type="button" class="history" onclick="location.href = '../HTML/goalshistory.html';">History</button>
+            <button type="button" class="history"
+                onclick="location.href = 'goalinvsellhist.html';">History</button>
         </div>
     </div>
 
