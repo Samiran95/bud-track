@@ -6,19 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/incomedisplay.css">
+    <link rel="stylesheet" href="../../fontawesome/css/all.css">
     <script src="../../Common/JS/gsap.min.js" defer></script>
     <script src="../JS/Animation/incdisplayanimate.js" defer></script>
     <title>Income Display</title>
 </head>
 
 <body>
-        <!---Loader-->
-        <div class="loaderenter"></div>
-        <div class="screen"> 
-            <p class="screen-name">I N C O M E</p>
-            <p class="screen-name">H I S T O R Y</p>
-        </div>
-        <!---Loader-->
+    <!---Loader-->
+    <div class="loaderenter"></div>
+    <div class="screen">
+        <p class="screen-name">I N C O M E</p>
+        <p class="screen-name">H I S T O R Y</p>
+    </div>
+    <!---Loader-->
     <div class="upper">
         <form>
             <select class="typeof-necessity">
@@ -27,9 +28,13 @@
                 <option value="Business">Business</option>
                 <option value="Others">Others</option>
             </select>
-            <button type="button" class="filter">Filter</button>
-            <button type="button" class="delete">Delete ?</button>
         </form>
+        <div class="buttons-click">
+            <button type="button" class="filter"><i class="fa-solid fa-arrow-right"></i></button>
+            <button type="button" class="delete"><i class="fa-solid fa-trash"></i></button>
+            <button type="button" class="analytics"><i class="fa-solid fa-chart-pie"></i></button>
+        </div>
+
     </div>
     <div class="middle">
         <div class="filter-name">

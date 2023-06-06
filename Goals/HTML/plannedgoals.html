@@ -5,24 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/plannedgoals.css">
-    <link rel="stylesheet" href="goalshistory.html">
+    <link rel="stylesheet" href="../CSS/goalsexpenseform.css">
+    <script src="../../Common/JS/gsap.min.js" defer></script>
+    <script src="../JS/Animation/goalsformanimate.js" defer></script>
     <title>Planned Household Purchases</title>
 </head>
 
 <body>
+    <!---Loader-->
+    <div class="loaderenter"></div>
+    <div class="screen">
+        <p class="screen-name">P L A N N E D</p>
+        <p class="screen-name">G O A L S</p>
+    </div>
+    <!---Loader-->
     <div class="upper">
-        <p class="heading-word1">P L A N N E D</p>
-        <p class="heading-word2">G O A L S</p>
+        <p class="heading-word">P L A N N E D</p>
+        <p class="heading-word1">G O A L S</p>
     </div>
 
     <div class="lower">
         <form>
-            <input type="text" class="date-input" placeholder="Todays Date" onfocus="(this.type = 'date')" onblur="(this.type = 'text')">
-            <input type="text" class="hhname-input" placeholder="Purchase Name">
-            <input type="text" class="hhreason-input" placeholder="Reason">
-            <input type="text" class="date-input" placeholder="Planned Date" onfocus="(this.type = 'date')" onblur="(this.type = 'text')">
-            <input type="text" class="amount-input" placeholder="Expected Amount">
+            <input id="input" type="text" class="text-input" placeholder="Todays Date" onfocus="(this.type = 'date')"
+                onblur="(this.type = 'text')">
+            <input id="input" type="text" class="text-input" placeholder="Purchase Name">
+            <input id="input" type="text" class="text-input" placeholder="Reason">
+            <input id="input" type="text" class="text-input" placeholder="Planned Date" onfocus="(this.type = 'date')"
+                onblur="(this.type = 'text')">
+            <input id="input" type="text" class="text-input" placeholder="Expected Amount">
         </form>
         <div class="button">
             <button type="button" class="submit" onclick="">Submit</button>

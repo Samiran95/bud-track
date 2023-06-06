@@ -45,36 +45,42 @@ gsap.from(".delete" , {
     delay : 1.5,
 })
 
+gsap.from(".analytics" , {
+    y : "100vh",
+    duration : 1,
+    delay : 1.55,
+})
+
 
 gsap.from(".filter-word" , {
     y : "100vh",
-    delay: 1.6,
+    delay: 1.65,
     duration : 1,
 })
 
 gsap.from(".actual-filter" , {
     y : "101vh",
-    delay : 1.65,
+    delay : 1.7,
     duration : 1,
 })
 
 
 gsap.from(".transaction-heading" , {
     y : "101vh",
-    delay: 1.75,
+    delay: 1.8,
     duration : 1
 })
 
 gsap.from(".lower" , {
     y : "101vh",
     duration : 1,
-    delay : 1.9
+    delay : 1.95
 })
 
 gsap.from(".transaction-data" , {
     y : "101vh",
     duration : 1.3,
-    delay : 1.95,
+    delay : 2,
     stagger: 0.09
 })
 

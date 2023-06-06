@@ -52,7 +52,7 @@ body{
 
 /* Loader*/
 
-
+/*upper*/
 .upper{
     height: 10vh;
     width: 100%;
@@ -62,6 +62,7 @@ body{
 }
 
 form{
+    flex: 1;
     width: 100%;
     display: flex;
     align-items: center;
@@ -69,7 +70,7 @@ form{
 }
 
 .typeof-necessity{
-    width: 37vw;
+    width: 150px;
     height: 50px;
     background-color: #ebebeb;
     text-align: center;
@@ -78,28 +79,52 @@ form{
     border-radius: 30px;
 }
 
+.buttons-click{
+    flex: 1;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
 
 .filter{
-    width: 90px;
-    height: 40px;
-    font-size: 14px;
-    font-weight: 700;
-    border-radius: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
     border: none;
-    background-color: black;
-    color: white;
+    background-color: #0aff64;
+    box-shadow: 0px 0px 7px 0px #0aff64 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .delete{
-    width: 90px;
-    height: 40px;
-    font-size: 14px;
-    font-weight: 700;
-    border-radius: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ff3636;
+    box-shadow: 0px 0px 7px 0px #ff3636;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.analytics{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
     border: none;
     background-color: black;
+    box-shadow: 0px 0px 7px 0px black;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
+
+/*upper*/
 
 .middle{
     display: flex;
