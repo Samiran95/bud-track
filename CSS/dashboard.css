@@ -463,10 +463,14 @@ body{
 .setting-button {
     background-color: #0f0f0f;
     margin: 10px 15px 5px 0px;
-    padding: 5px 10px 5px 10px;
-    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
     border: none;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .data-containers {
