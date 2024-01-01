@@ -9,50 +9,17 @@
 
 body{
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 100vh;
     overflow: hidden;
 }
 
-/* Loader*/
-.screen{
-    position: absolute;
-    top: 125px;
-    width : 100%;
-    height: 100%;
+.upper-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-    font-weight: 200;
-    color: white;
-    pointer-events: none;
-    z-index: 2;
 }
-
-.screen-name{
-    opacity: 0;
-}
-
-.loaderenter{
-    position: absolute;
-    width: 100%;
-    height: 102vh;
-    background-color: black;
-    z-index: 1;
-    top: -10px;
-}
-
-.loaderenter::-webkit-scrollbar{
-    display: none;
-}
-
-
-/* Loader*/
-
 
 .upper{
     height: 10vh;
@@ -62,7 +29,7 @@ body{
     align-items: center;
 }
 
-form{
+.filter-form{
     width: 100%;
     display: flex;
     align-items: center;
@@ -78,7 +45,6 @@ form{
     border: none;
     border-radius: 30px;
 }
-
 
 .filter{
     width: 90px;
@@ -152,9 +118,9 @@ form{
 
 .add{
     background-color: #0f0f0f;
-    margin: 10px 15px 5px 0px;
-    padding: 5px 15px 5px 15px;
-    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
     border: none;
     color: white;
     display: flex;
@@ -274,3 +240,149 @@ form{
     height: 15px;
 }
 
+
+/*-----Lower Page-----*/
+
+/*----Universal Format in this Page----*/
+
+#input {
+    width: 70vw;
+    height: 60px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    border-radius: 50px;
+    margin-top: 35px;
+    border: none;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 5);
+}
+
+.container-description {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container-close {
+    position: absolute;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    color: rgb(71, 71, 71);
+}
+
+.below-containers-upper {
+    width: 100%;
+    height: 7vh;
+    /*fixed width*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.below-containers-middle {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.below-containers-lower {
+    height: 10vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----Universal Format in this Page----*/
+
+
+.lower-page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Personal Form */
+.personal-detail-form{
+    position: absolute;
+    top: 102vh;
+    width: 100%;
+    height: 75vh;
+    background-color: white;
+    border-radius: 40px 40px 0px 0px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.7);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.personal-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.personal-form::-webkit-scrollbar {
+    display: none;
+}
+
+.personal-submit-button {
+    width: 130px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #70ff2e;
+    box-shadow: 0px 0px 10px 0px #70ff2e;
+    font-weight: 600;
+}
+
+.below-containers-upper {
+    width: 100%;
+    height: 7vh;
+    /*fixed width*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.below-containers-middle {
+    height: 55vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.below-containers-lower {
+    height: 10vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Personal Form */
+
+.personal-word{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 102vh;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+/*-----Lower Page-----*/

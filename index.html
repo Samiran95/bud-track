@@ -3,191 +3,412 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/dashboard.css">
-    <link rel="stylesheet" href="CSS/pulse.css">
+    <link rel="stylesheet" href="Dasboard/CSS/dashboard.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="Saved_Cards/HTML/savedcardsdisplay.html">
+    <script src="Common/JS/gsap.min.js" defer></script>
+    <script src="Dasboard/JS/Animate/dasboardanimate.js" defer></script>
     <title>Dashboard</title>
 </head>
 
 <body>
-    <div class="upper">
-        <div class="upper-left">
-            <p class="hello-word">Hello</p>
-            <p class="name-word">Samiran</p>
-        </div>
-        <div class="upper-right">
-            <div class="alert">
-                <div class="blob red" onclick="location.href='Alerts_Reminders/HTML/alerts_red.html';"></div>
-                <div class="blob yellow" onclick="location.href='Alerts_Reminders/HTML/alerts_yellow.html';"></div>
+    <!------------Upper Page-------->
+    <div class="upper-page">
+        <div class="upper-section">
+            <div class="left-section">
+                <div class="left-upper-section">
+                    <div class="upper-left">Hello Samiran</div>
+                    <div class="upper-right"></div>
+                </div>
+                <div class="left-lower-section">
+                    <!-- Main Card -->
+                    <div class="main-card" onclick="location.href='Main/HTML/main.html';">
+                        <div class="main-card-upper">
+                            <div class="main-card-upper-upper">
+                                September Month
+                            </div>
+                            <div class="main-card-upper-lower">
+                                <div class="main-upper-lower-left">
+                                    <div class="upper-heading">Current Expenses</div>
+                                    <div class="main-upper-lower-left-content">&#8377 25000</div>
+                                </div>
+                                <div class="main-upper-lower-right">
+                                    <div class="upper-heading">Trends</div>
+                                    <div class="main-upper-lower-right-content"><i
+                                            class="fa-solid fa-arrow-trend-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-card-lower">
+                            <div class="main-card-lower-mini">
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Main Card -->
+                    <!-- Investment Card -->
+                    <div class="investment-card" onclick="location.href='Investment/HTML/investment.html';">
+                        <div class="investment-card-upper">
+                            <div class="investment-card-upper-upper">
+                                Investments
+                            </div>
+                            <div class="investment-card-upper-lower">
+                                <div class="investment-card-upper-lower-center">
+                                    <div class="upper-heading">Balance Available</div>
+                                    <div class="investment-card-upper-lower-content">&#8377 100000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="investment-card-lower">
+                            <div class="investment-card-lower-mini">
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Investment Card -->
+
+                    <!-- Lend Card -->
+                    <div class="lend-card">
+                        <div class="lend-card-upper">
+                            <div class="lend-card-upper-upper">
+                                Lended Money
+                            </div>
+                            <div class="lend-card-upper-lower">
+                                <div class="lend-card-upper-lower-center">
+                                    <div class="upper-heading">Balance Available</div>
+                                    <div class="lend-card-upper-lower-center-content">&#8377 100000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lend-card-lower">
+                            <div class="click-button">
+                                <div class="click-word">Click</div>
+                                <div class="click-sign">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Lend Card -->
+
+                    <!-- Other Funds Card -->
+                    <div class="of-card">
+                        <div class="of-card-upper">
+                            <div class="of-card-upper-upper">
+                                Other Funds
+                            </div>
+                            <div class="of-card-upper-lower">
+                                <div class="of-card-upper-lower-center">
+                                    <div class="upper-heading">Balance Available</div>
+                                    <div class="of-card-upper-lower-center-content">&#8377 20000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="of-card-lower">
+                            <div class="click-button">
+                                <div class="click-word">Click</div>
+                                <div class="click-sign">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Lend Card -->
+
+                    <div class="credit-card">Credit-card</div>
+                    <div class="loan-card">Loan-card</div>
+                    <div class="otherfund-card">Other Fund</div>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="right-section-upper">
+                    Other Selections!
+                </div>
+                <div class="right-section-lower">
+                    <div class="card-section">
+                        <div class="personal-details" onclick="personalDetailForm()">
+                            <div class="personal-details-upper">Personal</div>
+                            <div class="personal-details-lower">Details</div>
+                        </div>
+                        <div class="card-details" onclick="cardDetailForm()">
+                            <div class="card-details-upper">Card</div>
+                            <div class="card-details-lower">Details</div>
+                        </div>
+                    </div>
+                    <div class="shortcut-section">
+                        <div class="shortcut-container">
+                            <div class="shortcut-heading">Shortcuts</div>
+                            <div class="shortcut-container-upper">
+                                <div class="shortcut-main" onclick="trendOpen()">
+                                    <div class="shortcut-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                                    <div class="shortcut-description">Trend</div>
+                                </div>
+
+                                <div class="shortcut-main" onclick="analyticsOpen()">
+                                    <div class="shortcut-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                                    <div class="shortcut-description">Analytics</div>
+                                </div>
+
+                                <div class="shortcut-main">
+                                    <div class="shortcut-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                    <div class="shortcut-description">History</div>
+                                </div>
+                            </div>
+                            <div class="shortcut-container-lower">
+
+                                <div class="shortcut-main">
+                                    <div class="shortcut-icon"><i class="fa-solid fa-gear"></i></div>
+                                    <div class="shortcut-description">Settings</div>
+                                </div>
+
+
+                                <div class="shortcut-main">
+                                    <div class="shortcut-icon"><i class="fa-solid fa-newspaper"></i></div>
+                                    <div class="shortcut-description">News</div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="middle">
-        <div class="balance-card">
-            <div class="balance-card-left">
-                <div class="balance-card-upper">
-                    <p class="expense-balance-word1">EXPENSE BALANCE</p>
-                    <p class="expense-balance-word2">(THIS MONTH)</p>
-                    <p class="expense-balance-amount">25000</p>
-                </div>
-                <div class="balance-card-lower">
-                    <button type="button" class="balance-button"
-                        onclick="location.href='Balances/Balancedashboard/balancedashboard.html';">
-                        <p class="balance-button-word">More Balances</p>
-                        <p class="balance-sign">></p>
-                    </button>
-                </div>
-            </div>
-            <div class="balance-card-right" onclick="location.href ='Analytics/HTML/analyticsdashboard.html';">
-                <p class="analytics-word">A N A L Y T I C S &nbsp></p>
-            </div>
-        </div>
-        <div class="investments-card">
-            <div class="investments-card-left">
-                <div class="investments-heading">INVESTMENTS</div>
-                <div class="market-container">
-                    <div class="market-heading">
-                        <p class="market-word">Market</p>
-                        <button type="button" class="market-news"><p class="news-word">News</p><p class="news-sign">></p></button>
-                    </div>
-                    <div class="sub-market">
-                        <div class="sub-market-container">
-                            <p class="sub-market-heading">Sensex</p>
-                            <p class="sub-market-number">50000</p>
-                        </div>
 
-                        <div class="sub-market-container">
-                            <p class="sub-market-heading">Sensex</p>
-                            <p class="sub-market-number">50000</p>
-                        </div>
+    <!------------Upper Page-------->
 
-                        <div class="sub-market-container">
-                            <p class="sub-market-heading">Sensex</p>
-                            <p class="sub-market-number">50000</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="investments-card-right" onclick="location.href = 'Investments/HTML/investmentdashboard.html';">
-                <p class="explore-word">E X P L O R E &nbsp></p>
-            </div>
+    <!------------Lower Page-------->
+    <!------------Elements-------->
+    <div class="lower-page">
+        <div class="bigger-personal-details">
+            <div class="personal-details-upper">Personal</div>
+            <div class="personal-details-lower">Details</div>
         </div>
-        <div class="others-card">
-            <button type="button" class="apps-button" onclick="location.href = 'Apps/apps.html';">More Apps</button>
-            <button type="button" class="saved-card-button"
-                onclick="location.href = 'Saved_Cards/HTML/savedcardsdisplay.html';">Saved Cards</button>
-            <button type="button" class="personal-details-button" onclick="location.href = 'Personal_Details/HTML/pddisplay.html';">Personal Details</button>
+
+
+        <div class="bigger-card-details">
+            <div class="card-details-upper">Card</div>
+            <div class="card-details-lower">Details</div>
+        </div>
+
+    </div>
+
+
+    <!------------Elements-------->
+    <!------------Forms-------->
+    <!------------Personal-detail-form-------->
+    <div class="personal-detail-form">
+        <div class="below-containers-upper">
+            <div class="container-description">Enter Your Password</div>
+            <div class="container-close" onclick="closePersonalDetailForm()"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="below-containers-middle">
+            <form class="personal-password-form">
+                <input id="input" type="password" placeholder="Password">
+            </form>
+        </div>
+        <div class="below-containers-lower">
+            <div class="personal-submit-button" onclick="location.href='Personal_Details/HTML/pddisplay.html';">Submit</div>
         </div>
     </div>
-    <div class="lower">
-        <div class="lower-upper">
-            <div class="transaction-container">
-                <button type="button" class="income-button"
-                    onclick="location.href = 'Income/HTML/incomeform.html';">Income</button>
-                <button type="button" class="payment-button"
-                    onclick="location.href = 'In_Between/Expenses/HTML/typeofexpenses.html';">Payment</button>
-            </div>
+
+    <div class="card-detail-form">
+        <div class="below-containers-upper">
+            <div class="container-description">Enter Your Password</div>
+            <div class="container-close" onclick="closeCardDetailForm()"><i class="fa-solid fa-xmark"></i></div>
         </div>
-        <div class="lower-lower">
-            <div class="watchlist">
-                <p class="watchlist-word">Watchlist</p>
-                <div class="watchlist-container">
-
-                    <!-- From here the container Starts -->
-                    <div class="heading-upper">
-                        <div class="watchlist-heading-word">Balance Available</div>
-                        <button type="button" class="setting-button"><i class="fa-solid fa-gear"></i></button>
-                    </div>
-                    <div class="data-containers">
-
-                        <div class="expense-data-container"
-                            onclick="location.href = 'Trends/Necessity/necessitytrends.html';">
-                            <div class="expense-data-heading">Necessity</div>
-                            <div class="expense-data-amount">4500</div>
-                        </div>
-
-                        <div class="expense-data-container" onclick="location.href = 'Trends/Wants/wantstrends.html';">
-                            <div class="expense-data-heading">Wants</div>
-                            <div class="expense-data-amount">1342</div>
-                        </div>
-
-                        <div class="expense-data-container"
-                            onclick="location.href = 'Trends/Investments/investmentstrends.html';">
-                            <div class="expense-data-heading">Investments</div>
-                            <div class="expense-data-amount">900000023</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="watchlist-container">
-
-                    <div class="heading-upper">
-                        <div class="watchlist-heading-word">Current Month Expenses</div>
-                        <button type="button" class="setting-button">Settings</button>
-                    </div>
-                    <div class="data-container-main">
-                        <div class="data-containers1">
-
-                            <div class="month-data-container"
-                                onclick="location.href = 'Trends/Necessity/necessitytrends.html';">
-                                <div class="month-data-heading">Expense</div>
-                                <div class="month-data-amount">&#8377 1234</div>
-                            </div>
-                        </div>
-                        <div class="data-containers1">
-
-                            <div class="month-data-container"
-                                onclick="location.href = 'Trends/Wants/wantstrends.html';">
-                                <div class="month-data-heading">Income</div>
-                                <div class="month-data-amount">&#8377 1342</div>
-                            </div>
-                        </div>
-
-                        <div class="data-containers1">
-
-                            <div class="month-data-container"
-                                onclick="location.href = 'Trends/Wants/wantstrends.html';">
-                                <div class="month-data-heading">Income</div>
-                                <div class="month-data-amount">&#8377 1342</div>
-                            </div>
-                        </div>
-
-                        <div class="data-containers1">
-
-                            <div class="month-data-container"
-                                onclick="location.href = 'Trends/Wants/wantstrends.html';">
-                                <div class="month-data-heading">Income</div>
-                                <div class="month-data-amount">1342</div>
-                            </div>
-                        </div>
-
-                        <div class="data-containers1">
-
-                            <div class="month-data-container"
-                                onclick="location.href = 'Trends/Wants/wantstrends.html';">
-                                <div class="month-data-heading">Income</div>
-                                <div class="month-data-amount">1342</div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="watchlist-container">
-
-                    <div class="heading-upper">
-                        <div class="watchlist-heading-word">Upcoming Reminders</div>
-                        <button type="button" class="setting-button"><i class="fa-solid fa-plus"></i></button>
-                    </div>
-                    <div class="data-containers2">
-
-                    </div>
-                </div>
-
-            </div>
+        <div class="below-containers-middle">
+            <form class="card-password-form">
+                <input id="input" type="password" placeholder="Password">
+            </form>
+        </div>
+        <div class="below-containers-lower">
+            <div class="card-submit-button" onclick="location.href='Saved_Cards/HTML/savedcardsdisplay.html';" >Submit</div>
         </div>
     </div>
+
+    <!------------Trends -------->
+
+    <div id="trend-page" class="background">
+        <div class="second-upper">
+            <div class="second-upper-title">Trends</div>
+            <div class="second-upper-action" onclick="trendClose()"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="second-content">
+            <div class="content-arrangement">
+                <div class="links">hello</div>
+                <div class="links">hello</div>
+                <div class="links">hello</div>
+            </div>
+            <div class="content-arrangement">
+                <div class="links">hello</div>
+                <div class="links">hello</div>
+                <div class="links">hello</div>
+            </div>
+            <div class="content-arrangement">
+                <div class="links">hello</div>
+                <div class="links">hello</div>
+                <div class="links">hello</div>
+            </div>
+            <div class="content-arrangement">
+                <div class="links">hello</div>
+                <div class="links">hello</div>
+                <div class="links">hello</div>
+            </div>
+            <div class="content-arrangement">
+                <div class="links">hello</div>
+                <div class="links">hello</div>
+                <div class="links">hello</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!------------Trends -------->
+
+
+        <!------------Analytics -------->
+
+        <div id="analytics-page" class="background">
+            <div class="second-upper">
+                <div class="second-upper-title">Analytics</div>
+                <div class="second-upper-action" onclick="analyticsClose()"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="second-content">
+                <div class="content-arrangement">
+                    <div class="links1">hello</div>
+                    <div class="links1">hello</div>
+                    <div class="links1">hello</div>
+                </div>
+                <div class="content-arrangement">
+                    <div class="links1">hello</div>
+                    <div class="links1">hello</div>
+                    <div class="links1">hello</div>
+                </div>
+                <div class="content-arrangement">
+                    <div class="links1">hello</div>
+                    <div class="links1">hello</div>
+                    <div class="links1">hello</div>
+                </div>
+                <div class="content-arrangement">
+                    <div class="links1">hello</div>
+                    <div class="links1">Samruddhi</div>
+                    <div class="links1">hello</div>
+                </div>
+                <div class="content-arrangement">
+                    <div class="links1">hello</div>
+                    <div class="links1">hello</div>
+                    <div class="links1">hello</div>
+                </div>
+            </div>
+    
+        </div>
+    
+        <!------------Analytics-------->
+
+
+
+    <!------------Personal-detail-form-------->
+    <!------------Forms-------->
+    <!------------Lower Page-------->
+
 </body>
 
 </html>
